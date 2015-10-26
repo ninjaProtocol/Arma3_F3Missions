@@ -1079,18 +1079,17 @@ class Mission
 				items=4;
 				class Item0
 				{
-					position[]={20786.432,38.177414,6718.2822};
+					position[]={20785.594,40.934929,6689.3643};
 					id=62;
 					side="GUER";
 					vehicle="I_Soldier_TL_F";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
 				};
 				class Item1
 				{
-					position[]={20791.432,38.32505,6713.2822};
+					position[]={20790.594,41.318268,6684.3643};
 					id=63;
 					side="GUER";
 					vehicle="I_Soldier_AR_F";
@@ -1099,7 +1098,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={20781.432,38.571655,6713.2822};
+					position[]={20780.594,41.535812,6684.3643};
 					id=64;
 					side="GUER";
 					vehicle="I_Soldier_GL_F";
@@ -1107,11 +1106,24 @@ class Mission
 				};
 				class Item3
 				{
-					position[]={20796.432,38.592937,6708.2822};
+					position[]={20795.594,41.331573,6679.3643};
 					id=65;
 					side="GUER";
 					vehicle="I_soldier_LAT_F";
 					skill=0.40000001;
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={20786.631,39.663738,6701.1953};
+					expActiv="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
+					class Effects
+					{
+					};
+					showWP="NEVER";
 				};
 			};
 		};
@@ -1130,7 +1142,6 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
 				};
 				class Item1
 				{
@@ -1190,6 +1201,19 @@ class Mission
 					side="GUER";
 					vehicle="I_medic_F";
 					skill=0.40000001;
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={21684.51,14.599844,7627.52};
+					expActiv="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
+					class Effects
+					{
+					};
+					showWP="NEVER";
 				};
 			};
 		};
@@ -1521,7 +1545,6 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
 				};
 				class Item1
 				{
@@ -1583,6 +1606,19 @@ class Mission
 					skill=0.40000001;
 				};
 			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={20385.92,35.465477,8829.4131};
+					expActiv="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
 		};
 		class Item27
 		{
@@ -1599,7 +1635,6 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
 				};
 				class Item1
 				{
@@ -1661,6 +1696,19 @@ class Mission
 					skill=0.40000001;
 				};
 			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={20532.971,34.297382,8877.5313};
+					expActiv="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
 		};
 		class Item28
 		{
@@ -1708,7 +1756,6 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
 				};
 				class Item1
 				{
@@ -1736,6 +1783,19 @@ class Mission
 					skill=0.40000001;
 				};
 			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={18196.721,21.996479,8872.0781};
+					expActiv="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
 		};
 		class Item30
 		{
@@ -1752,7 +1812,7 @@ class Mission
 					vehicle="I_HMG_01_high_F";
 					leader=1;
 					skill=0.60000002;
-					init="this disableTIEquipment true;";
+					init="if (isServer) then {this disableTIEquipment true;}";
 				};
 			};
 		};
@@ -1771,7 +1831,7 @@ class Mission
 					vehicle="I_HMG_01_high_F";
 					leader=1;
 					skill=0.60000002;
-					init="this disableTIEquipment true;";
+					init="if (isServer) then {this disableTIEquipment true;}";
 				};
 			};
 		};
@@ -1790,7 +1850,7 @@ class Mission
 					vehicle="I_HMG_01_high_F";
 					leader=1;
 					skill=0.60000002;
-					init="this disableTIEquipment true;";
+					init="if (isServer) then {this disableTIEquipment true;}";
 				};
 			};
 		};
@@ -1809,7 +1869,7 @@ class Mission
 					vehicle="I_HMG_01_high_F";
 					leader=1;
 					skill=0.60000002;
-					init="this disableTIEquipment true;";
+					init="if (isServer) then {this disableTIEquipment true;}";
 				};
 			};
 		};
@@ -1828,7 +1888,6 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
 				};
 				class Item1
 				{
@@ -1854,6 +1913,19 @@ class Mission
 					side="GUER";
 					vehicle="I_Soldier_AAA_F";
 					skill=0.40000001;
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={21602.027,15.361361,7555.2759};
+					expActiv="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
+					class Effects
+					{
+					};
+					showWP="NEVER";
 				};
 			};
 		};
@@ -2625,7 +2697,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="[group this, getPos this, 100] call BIS_fnc_taskPatrol; this disableTIEquipment true;";
+					init="if (isServer) then {[group this, getPos this, 100] call BIS_fnc_taskPatrol; this disableTIEquipment true;}";
 				};
 			};
 		};
@@ -2644,7 +2716,6 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
 				};
 				class Item1
 				{
@@ -2672,6 +2743,19 @@ class Mission
 					skill=0.40000001;
 				};
 			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={20855.164,28.233795,7269.3364};
+					expActiv="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
 		};
 		class Item45
 		{
@@ -2688,7 +2772,6 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.44999999;
-					init="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
 				};
 				class Item1
 				{
@@ -2697,6 +2780,19 @@ class Mission
 					side="GUER";
 					vehicle="I_soldier_F";
 					skill=0.40000001;
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={21066.168,20.227623,7414.7954};
+					expActiv="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
+					class Effects
+					{
+					};
+					showWP="NEVER";
 				};
 			};
 		};
@@ -2715,7 +2811,6 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
 				};
 				class Item1
 				{
@@ -2725,6 +2820,19 @@ class Mission
 					vehicle="I_Spotter_F";
 					rank="CORPORAL";
 					skill=0.44999999;
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={21192.242,20.482405,7229.9121};
+					expActiv="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
+					class Effects
+					{
+					};
+					showWP="NEVER";
 				};
 			};
 		};
@@ -2744,7 +2852,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="[group this, getPos this, 100] call BIS_fnc_taskPatrol; this disableTIEquipment true;";
+					init="if (isServer) then {[group this, getPos this, 100] call BIS_fnc_taskPatrol; this disableTIEquipment true;}";
 				};
 			};
 		};
@@ -2764,7 +2872,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="[group this, getPos this, 100] call BIS_fnc_taskPatrol; this disableTIEquipment true;";
+					init="if (isServer) then {[group this, getPos this, 100] call BIS_fnc_taskPatrol; this disableTIEquipment true;}";
 				};
 			};
 		};
@@ -3470,7 +3578,7 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.44999999;
-					init="[this,""SIT_LOW""] call BIS_fnc_ambientAnim;";
+					init="if (isServer) then {[this,""SIT_LOW""] call BIS_fnc_ambientAnim;}";
 				};
 				class Item1
 				{
@@ -3481,7 +3589,7 @@ class Mission
 					side="WEST";
 					vehicle="B_G_Soldier_F";
 					skill=0.40000001;
-					init="[this,""SIT_LOW""] call BIS_fnc_ambientAnim;";
+					init="if (isServer) then {[this,""SIT_LOW""] call BIS_fnc_ambientAnim;}";
 				};
 			};
 		};
@@ -3608,7 +3716,6 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="[group this, getPos this, 50] call BIS_fnc_taskPatrol;";
 				};
 				class Item1
 				{
@@ -3634,6 +3741,19 @@ class Mission
 					side="GUER";
 					vehicle="I_soldier_LAT_F";
 					skill=0.40000001;
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={20777.332,36.308651,6785.3813};
+					expActiv="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
+					class Effects
+					{
+					};
+					showWP="NEVER";
 				};
 			};
 		};

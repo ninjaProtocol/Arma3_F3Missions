@@ -28,6 +28,7 @@ README CONTENTS
 Version | Date | Notes
 
 0-0-1 | 09-10-2015 | First public release
+0-0-2 | 26-10-2015 | Bug fix - init code, patrols
 
 
 
@@ -87,7 +88,7 @@ Consider turning of NVG equipment in addition to thermals for INDFOR vehicles or
 Helicopter AI at the start *may* misbehave inexplicably, and buck around. Please avoid feeling sick, consume
 Party issued medicine.
 
-All changelogs are for vX (where X={1,2,3...}) releases, not minor day-to-day work between. For my sanity.
+All changelogs are for vX (where X={1,2,3...}) releases or bugfixes, not minor day-to-day work in-between. For my sanity.
 
 
 08. CHANGE HISTORY
@@ -97,3 +98,7 @@ Version | Date
 
 0-0-1 | 09-10-2015
 First release (v1).
+
+0-0-2 | 26-10-2015
+Added a check for server locality for some AI inits.
+Shifted the call to BIS_fnc_taskPatrol out of AI init and to waypoint init in view of locality considerations.
