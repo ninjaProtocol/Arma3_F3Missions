@@ -13,7 +13,7 @@ _cre = player createDiaryRecord ["diary", ["Credits","
 <br/>
 Made with love by SuicideKing for Folk ARPS.
 <br/><br/>
-Thanks for all the help during mission making, especially darkChozo, fer, wolfenswan, eagle_eye and bobbero.
+Thanks for all the help during mission making, especially darkChozo, fer, wolfenswan, eagle_eye Aqarius and bobbero.
 <br/><br/>
 Made with F3 (http://www.ferstaberinde.com/f3/en/)
 "]];
@@ -39,7 +39,7 @@ _exe = player createDiaryRecord ["diary", ["Execution","
 <br/>
 <font size='18'>COMMANDER'S INTENT</font>
 <br/>
-Insert along the <marker name = 'mrkLZ'>beach</marker> and fulfill objectives as per CO's wishes.
+You will be inserted along the <marker name = 'mrkLZ'>beach</marker>. Rest is up to CO.
 <br/><br/>
 Make sure to sweep the airbase completely, fence to fence, building to building.
 <br/><br/>
@@ -53,9 +53,9 @@ No fire support is available.
 <br/><br/>
 <font size='18'>SPECIAL TASKS</font>
 <br/>
-<marker name = 'mrkSelakano'>Selakano</marker> and <marker name = 'mrkFeres'>Feres</marker> are abandoned save for AAF troops, thus large ordinance is allowed. 
+<marker name = 'mrkSelakano'>Selakano</marker> and <marker name = 'mrkFeres'>Feres</marker> are presumed devoid of civilians. Ordnance use is not restricted. 
 <br/><br/>
-Should you capture AAF supply crates, refrain from using equipment you're not trained for, Comrades!
+You may use captured AAF supply crates and vehicles to resupply. However, don't use special equipment you are not meant to use.
 "]];
 
 // ====================================================================================
@@ -67,15 +67,13 @@ _mis = player createDiaryRecord ["diary", ["Mission","
 <br/>
 As the platoon is spearheading the invasion, it must take out and capture key components of the AAF defence.
 <br/><br/>
-An <marker name = 'mrkAAA'>AAA Unit</marker> has been spotted in a clump of trees on a ridge near the southern tip. 
-Neutralise it so that our helicopters can bring in troops and supplies from Stratis, and provide CAS support.
+Neutralise the <marker name = 'mrkAAA'>AAA Unit</marker> spotted on a ridge near the southern tip to secure the airspace.
 <br/><br/>
-To enable proper air logistics, capture the small <marker name = 'mrkAir'>airbase</marker>. This will serve as HQ and enable a full invasion.
+Capture the small <marker name = 'mrkAir'>airbase</marker>. This will serve as an HQ for the full invasion.
 <br/><br/>
-On your way to the airbase, you will encounter an <marker name = 'mrkBase'>AAF fortification</marker>. Clear it so that we may occupy it later.
+Clear the <marker name = 'mrkBase'>AAF fortification</marker> NW of the airbase, so that we may occupy it later.
 <br/><br/>
-Finally, the towns of <marker name = 'mrkSelakano'>Selakano</marker> and <marker name = 'mrkFeres'>Feres</marker> are abandoned, and only light AAF patrols are expected there. 
-They are not among your objectives, but be careful in or around them.
+Finally, the towns of <marker name = 'mrkSelakano'>Selakano</marker> and <marker name = 'mrkFeres'>Feres</marker> are not among your objectives, but be careful in or around them.
 "]];
 
 // ====================================================================================
@@ -85,12 +83,12 @@ They are not among your objectives, but be careful in or around them.
 
 _sit = player createDiaryRecord ["diary", ["Situation","
 <br/>
-NATO has initiated an invasion of southern Altis, in preparation for a larger attack on the capital, Pyrgos.
+NATO has initiated a landing operation of southern Altis, in preparation for a larger attack on Pyrgos. Our unit has been tasked with laying the groundwork.
 <br/><br/>
 <font size='18'>ENEMY FORCES</font>
 <br/>
-All AAF forces. An AAA unit has been <marker name = 'mrkAAA'>spotted on a ridge</marker>, and the enemy occupies a small <marker name = 'mrkBase'>fortification</marker> and an <marker name = 'mrkAir'>airbase</marker>. 
-All towns are under AAF control.
+Unknown numbers of enemy garrison the <marker name = 'mrkBase'>fortification</marker> and <marker name = 'mrkAir'>airbase</marker>. A mechanized <marker name = 'mrkAAA'>AAA squad</marker> has been spotted on the ridge.
+Towns appear to be mostly empty save for scattered patrols.
 <br/><br/>
 <font size='18'>FRIENDLY FORCES</font>
 <br/>
