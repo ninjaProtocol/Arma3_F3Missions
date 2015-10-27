@@ -13,7 +13,7 @@ _cre = player createDiaryRecord ["diary", ["Credits","
 <br/>
 Made with love by SuicideKing for Folk ARPS.
 <br/><br/>
-Thanks for all the help during mission making, especially darkChozo, fer, wolfenswan, eagle_eye Aqarius and bobbero.
+Thanks for all the help during mission making, especially darkChozo, fer, wolfenswan, eagle_eye, Aqarius and bobbero.
 <br/><br/>
 Made with F3 (http://www.ferstaberinde.com/f3/en/)
 "]];
@@ -43,17 +43,9 @@ You will be inserted along the <marker name = 'mrkLZ'>beach</marker>. Rest is up
 <br/><br/>
 Make sure to sweep the airbase completely, fence to fence, building to building.
 <br/><br/>
-<font size='18'>MOVEMENT PLAN</font>
-<br/>
-N/A
-<br/><br/>
-<font size='18'>FIRE SUPPORT PLAN</font>
-<br/>
-No fire support is available.
-<br/><br/>
 <font size='18'>SPECIAL TASKS</font>
 <br/>
-<marker name = 'mrkSelakano'>Selakano</marker> and <marker name = 'mrkFeres'>Feres</marker> are presumed devoid of civilians. Ordnance use is not restricted. 
+<marker name = 'mrkSelakano'>Selakano</marker> and <marker name = 'mrkFeres'>Feres</marker> are presumed devoid of civilians. Ordinance use is not restricted. 
 <br/><br/>
 You may use captured AAF supply crates and vehicles to resupply. However, don't use special equipment you are not meant to use.
 "]];
@@ -67,13 +59,11 @@ _mis = player createDiaryRecord ["diary", ["Mission","
 <br/>
 As the platoon is spearheading the invasion, it must take out and capture key components of the AAF defence.
 <br/><br/>
-Neutralise the <marker name = 'mrkAAA'>AAA Unit</marker> spotted on a ridge near the southern tip to secure the airspace.
-<br/><br/>
-Capture the small <marker name = 'mrkAir'>airbase</marker>. This will serve as an HQ for the full invasion.
-<br/><br/>
-Clear the <marker name = 'mrkBase'>AAF fortification</marker> NW of the airbase, so that we may occupy it later.
-<br/><br/>
-Finally, the towns of <marker name = 'mrkSelakano'>Selakano</marker> and <marker name = 'mrkFeres'>Feres</marker> are not among your objectives, but be careful in or around them.
+- Neutralise the <marker name = 'mrkAAA'>AAA Unit</marker>.
+<br/>
+- Capture the small <marker name = 'mrkAir'>airbase</marker>.
+<br/>
+- Clear the <marker name = 'mrkBase'>AAF fortification</marker> NW of the airbase.
 "]];
 
 // ====================================================================================

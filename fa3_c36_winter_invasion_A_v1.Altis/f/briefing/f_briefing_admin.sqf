@@ -15,7 +15,7 @@ _customText = "";
 _briefing ="
 <br/>
 <font size='18'>ADMIN SECTION</font><br/>
-This briefing section can only be seen by the current admin.
+End trigger fires when all three objectives are complete, in any order.
 <br/><br/>
 ";
 
