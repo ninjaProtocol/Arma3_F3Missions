@@ -28,6 +28,7 @@ README CONTENTS
 Version | Date | Notes
 
 0-0-1 | 09-10-2015 | First public release
+0-0-2 | 04-11-2015 | Small tweaks and touches
 
 
 
@@ -82,7 +83,7 @@ Consider turning of NVG equipment in addition to thermals for INDFOR vehicles or
 Helicopter AI at the start *may* misbehave inexplicably, and buck around. Please avoid feeling sick, consume
 Party issued medicine.
 
-All changelogs are for vX (where X={1,2,3...}) releases, not minor day-to-day work between. For my sanity.
+All changelogs are for vX (where X={1,2,3...}) releases or bug fixes, not minor day-to-day work between. For my sanity.
 
 
 08. CHANGE HISTORY
@@ -92,3 +93,11 @@ Version | Date
 
 0-0-1 | 26-10-2015
 First release (v1).
+
+0-0-2 | 04-11-2015
+Tweaked briefing to clarify AAA squad must be destroyed completely.
+Replaced sniper with marksman because sniper wasn't behaving like a sniper.
+Helos now open and close rear doors during landing (via triggers).
+Code to delete triggers after helos are deleted at waypoints.
+Added more enemies in airfield (bunkers).
+First revision, second public version (v2).

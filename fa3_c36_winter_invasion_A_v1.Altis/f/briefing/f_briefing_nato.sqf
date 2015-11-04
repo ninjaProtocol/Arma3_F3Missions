@@ -39,7 +39,7 @@ _exe = player createDiaryRecord ["diary", ["Execution","
 <br/>
 <font size='18'>COMMANDER'S INTENT</font>
 <br/>
-You will be inserted along the <marker name = 'mrkLZ'>beach</marker>. Rest is up to CO.
+You will be inserted along the <marker name = 'mrkLZ'>beach</marker>. Eliminate the entire AAA squad, and clear all hostiles in and around the fortification.
 <br/><br/>
 Make sure to sweep the airbase completely, fence to fence, building to building.
 <br/><br/>
