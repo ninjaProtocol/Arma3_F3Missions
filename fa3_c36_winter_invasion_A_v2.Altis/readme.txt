@@ -62,7 +62,7 @@ The Software is distributed without any warranty; without even the implied warra
 
 To begin using the Software:
 
-1. Move the file fa3_c48_winter_invasion_v1 into the following directory (assuming you have the Steam version of ArmA 3):
+1. Move the file fa3_c36_winter_invasion_A_v1.Altis.PBO into the following directory (assuming you have the Steam version of ArmA 3):
 
 C:\Program Files (x86)\Steam\steamapps\common\Arma 3\MPMissions
 
