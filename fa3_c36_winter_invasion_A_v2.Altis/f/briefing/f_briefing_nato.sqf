@@ -25,9 +25,11 @@ Made with F3 (http://www.ferstaberinde.com/f3/en/)
 
 _adm = player createDiaryRecord ["diary", ["Administration","
 <br/>
-Alpha, Command start in Huron H1, under AI control.
+Alpha, Command start in Hotel 1, under AI control.
 <br/>
-Bravo, MMGs start in Huron H2, also under AI control.
+Bravo, MMGs start in Hotel 2, also under AI control.
+<br/>
+Hotel is flying CH-67 Hurons.
 "]];
 
 // ====================================================================================
