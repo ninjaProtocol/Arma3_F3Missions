@@ -134,3 +134,8 @@ Removed: driver, gunner from CO group
 Changed: CO's vehicle to unarmed Ifrit
 Added: Armed ifrit (HMG) called Command Vehicle or COV with driver, gunner.
 Modified: Added placement radius for two garrison logic objects.
+
+0-0-8 | 11 11 2015
+Tweaked: FIA Mortar dude's position.
+Removed: Garrison logic placement radii, other tweaks to garrisonLogic
+Third pubblic release, v3.
