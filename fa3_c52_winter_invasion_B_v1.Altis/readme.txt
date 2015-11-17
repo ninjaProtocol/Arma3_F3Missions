@@ -28,6 +28,7 @@ README CONTENTS
 Version | Date | Notes
 
 0-0-1 | 29-10-2015 | First public release
+0-0-2 | 04-11-2015 | Second public release
 
 
 
@@ -61,7 +62,7 @@ The Software is distributed without any warranty; without even the implied warra
 
 To begin using the Software:
 
-1. Move the file fa3_c52_winter_invasion_B_v1.Altis.pbo into the following directory (assuming you have the Steam version of ArmA 3):
+1. Move the file fa3_c52_winter_invasion_B_v2.Altis.pbo into the following directory (assuming you have the Steam version of ArmA 3):
 
 C:\Program Files (x86)\Steam\steamapps\common\Arma 3\MPMissions
 
@@ -92,3 +93,7 @@ Version | Date
 
 0-0-1 | 29-10-2015
 First release (v1).
+
+0-0-2 | 04-11-2015
+Switched off AI reports
+Updated name to V2

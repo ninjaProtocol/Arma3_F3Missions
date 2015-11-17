@@ -115,7 +115,7 @@ class Mission
 	randomSeed=11823142;
 	class Intel
 	{
-		briefingName="fa3_c52_winter_invasion_part_II_v1";
+		briefingName="fa3_c52_winter_invasion_part_II_v2";
 		overviewText="NATO invades southern Altis.";
 		resistanceWest=0;
 		resistanceEast=1;
