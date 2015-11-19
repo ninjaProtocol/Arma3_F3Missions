@@ -29,14 +29,14 @@ _adm = player createDiaryRecord ["diary", ["Administration","
 <br/>
 Squads start mounted in IFVs, attachments in Hunters (one per team).
 <br/><br/>
-CO, ENG do NOT start mounted, and can go to either CO Vic or their own Hunters.
+CO, ENG do NOT start mounted, and can go to either CO Vic or their own <marker name='hunters'>Hunters</marker>.
 <br/><br/>
 Mortar team doesn't start mounted, nor do they have a transport, so they'll have to hitch a ride if they need to be moved.
 <br/><br/>
 <font size='18'>EXPLOSIVES</font>
 <br/>
 Engineers have explosives. If you haven't slotted them, take explosives from the <marker name = 'mrkSupply'>supply crates</marker> 
- near the barracks on the right.
+ to the right of the barracks.
  <br/><br/>
 <font size='18'>EXTRA AMMUNITION</font>
 <br/>
@@ -74,7 +74,7 @@ To further establish a stronghold on Altis, the Platoon will fulfil the followin
 <br/><br/>
 - <marker name = 'mrkPanagia'>Capture Panagia</marker> by clearing it of hostiles<br/>
 - Destroy the <marker name = 'mrkTower'>radio tower</marker> to cripple AAF comms<br/>
-- Survive counterattacks
+- Survive <marker name = 'counter'>counterattacks</marker>
 <br/><br/>
 WIN CONDITIONS:<br/>
 Each objective carries one 'point'. The end is triggered when you have 3 points. Order does not matter.

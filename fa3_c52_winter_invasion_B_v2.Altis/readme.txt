@@ -1,10 +1,10 @@
 MISSION README
 ==============
 
-Mission: Winter Invasion
-Version: 0-0-1
+Mission: Winter Invasion Part II
+Version: 0-0-2
 Developer(s): Ojas Sarup ("SuicideKing")
-Description: NATO invades Altis in winter.
+Description: NATO Mech platoon continues push into Altis.
 
 
 
@@ -29,7 +29,7 @@ Version | Date | Notes
 
 0-0-1 | 29-10-2015 | First public release
 0-0-2 | 04-11-2015 | Second public release
-
+0-0-3 | 18-11-2015 | tweaks for v2
 
 
 02. COPYRIGHT STATEMENT
@@ -83,6 +83,9 @@ i.e. I'm using a countown instead of a timeout. This was done to avoid accidentl
 timer if palyers left the area (while fighting back, etc.). Ideally, one would want to pause the timer,
 but that would involve scripts and I'm not in the mood for any more.
 
+Some ambient animations aren't playing on the FA mission testing server. Sitting and standing work fine. Not sure what's up.
+Leaving it in for now to test on the main server.
+
 All changelogs are for vX (where X={1,2,3...}) releases or bugfixes, not minor day-to-day work in-between. For my sanity.
 
 
@@ -97,3 +100,12 @@ First release (v1).
 0-0-2 | 04-11-2015
 Switched off AI reports
 Updated name to V2
+
+0-0-3 | 20-11-2015
+changed all enemy Missile Specialist (AT) to R(AT)
+changed enemy Sniper to Marksman
+added marker for final counterattack location.
+added marker for alternative CO, ENG transports
+put an isServer guard for all moveInCargo and ambient animation calls
+Moved all taskPatrol calls from waypoint OnAct fields to init fields with isServer checks. Was causing locallity issues. Thanks BIS.
+Externally remains v2.

@@ -226,4 +226,3 @@ f_wound_extraFAK = 2;
 // ====================================================================================
 // Objective counters
 primaryObjectivesCompleted = 0;
-secondaryObjectivesCompleted = 0;

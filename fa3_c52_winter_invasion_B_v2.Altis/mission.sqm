@@ -116,7 +116,7 @@ class Mission
 	class Intel
 	{
 		briefingName="fa3_c52_winter_invasion_part_II_v2";
-		overviewText="NATO invades southern Altis.";
+		overviewText="NATO Mech Platoon continues push into Southern Altis.";
 		resistanceWest=0;
 		resistanceEast=1;
 		startFog=0.5;
@@ -274,7 +274,7 @@ class Mission
 					azimut=125;
 					id=12;
 					side="GUER";
-					vehicle="I_soldier_AT_F";
+					vehicle="I_Soldier_LAT_F";
 					rank="CORPORAL";
 					skill=0.44999999;
 				};
@@ -355,6 +355,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
+					init="if (isServer) then {[group this, getPos this, 100] call BIS_fnc_taskPatrol;}";
 				};
 				class Item1
 				{
@@ -387,7 +388,7 @@ class Mission
 					position[]={20360.324,35.59697,8821.2783};
 					id=20;
 					side="GUER";
-					vehicle="I_soldier_AT_F";
+					vehicle="I_Soldier_LAT_F";
 					rank="CORPORAL";
 					skill=0.44999999;
 				};
@@ -416,19 +417,6 @@ class Mission
 					skill=0.40000001;
 				};
 			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={20386.088,35.446857,8828.4131};
-					expActiv="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
-					class Effects
-					{
-					};
-					showWP="NEVER";
-				};
-			};
 		};
 		class Item3
 		{
@@ -445,6 +433,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
+					init="if (isServer) then {[group this, getPos this, 100] call BIS_fnc_taskPatrol;}";
 				};
 				class Item1
 				{
@@ -506,19 +495,6 @@ class Mission
 					skill=0.40000001;
 				};
 			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={20532.971,34.297382,8877.5313};
-					expActiv="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
-					class Effects
-					{
-					};
-					showWP="NEVER";
-				};
-			};
 		};
 		class Item4
 		{
@@ -532,7 +508,7 @@ class Mission
 					azimut=140;
 					id=32;
 					side="GUER";
-					vehicle="I_Sniper_F";
+					vehicle="I_Soldier_M_F";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
@@ -566,6 +542,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
+					init="if (isServer) then {[group this, getPos this, 100] call BIS_fnc_taskPatrol;}";
 				};
 				class Item1
 				{
@@ -591,19 +568,6 @@ class Mission
 					side="GUER";
 					vehicle="I_Soldier_AAA_F";
 					skill=0.40000001;
-				};
-			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={18196.721,21.996479,8872.0781};
-					expActiv="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
-					class Effects
-					{
-					};
-					showWP="NEVER";
 				};
 			};
 		};
@@ -711,7 +675,7 @@ class Mission
 					vehicle="I_Soldier_SL_F";
 					rank="SERGEANT";
 					skill=0.5;
-					init="this moveInCargo indIFV2;";
+					init="if (isServer) then {this moveInCargo indIFV2;}";
 				};
 				class Item2
 				{
@@ -719,10 +683,10 @@ class Mission
 					azimut=145;
 					id=44;
 					side="GUER";
-					vehicle="I_Soldier_AT_F";
+					vehicle="I_Soldier_LAT_F";
 					rank="CORPORAL";
 					skill=0.44999999;
-					init="this moveInCargo indIFV2;";
+					init="if (isServer) then {this moveInCargo indIFV2;}";
 				};
 				class Item3
 				{
@@ -730,9 +694,9 @@ class Mission
 					azimut=145;
 					id=45;
 					side="GUER";
-					vehicle="I_Soldier_AT_F";
+					vehicle="I_Soldier_LAT_F";
 					skill=0.40000001;
-					init="this moveInCargo indIFV2;";
+					init="if (isServer) then {this moveInCargo indIFV2;}";
 				};
 				class Item4
 				{
@@ -740,9 +704,9 @@ class Mission
 					azimut=145;
 					id=46;
 					side="GUER";
-					vehicle="I_Soldier_AT_F";
+					vehicle="I_Soldier_LAT_F";
 					skill=0.40000001;
-					init="this moveInCargo indIFV2;";
+					init="if (isServer) then {this moveInCargo indIFV2;}";
 				};
 				class Item5
 				{
@@ -752,7 +716,7 @@ class Mission
 					side="GUER";
 					vehicle="I_Soldier_AAT_F";
 					skill=0.40000001;
-					init="this moveInCargo indIFV2;";
+					init="if (isServer) then {this moveInCargo indIFV2;}";
 				};
 				class Item6
 				{
@@ -762,7 +726,7 @@ class Mission
 					side="GUER";
 					vehicle="I_Soldier_AAT_F";
 					skill=0.40000001;
-					init="this moveInCargo indIFV2;";
+					init="if (isServer) then {this moveInCargo indIFV2;}";
 				};
 				class Item7
 				{
@@ -772,7 +736,7 @@ class Mission
 					side="GUER";
 					vehicle="I_Soldier_AAT_F";
 					skill=0.40000001;
-					init="this moveInCargo indIFV2;";
+					init="if (isServer) then {this moveInCargo indIFV2;}";
 				};
 			};
 			class Waypoints
@@ -781,12 +745,12 @@ class Mission
 				class Item0
 				{
 					position[]={19901.113,67.223656,11646.861};
-					synchronizations[]={43};
+					synchronizations[]={42};
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					syncId=24;
+					syncId=23;
 				};
 				class Item1
 				{
@@ -839,7 +803,7 @@ class Mission
 					vehicle="I_Soldier_SL_F";
 					rank="SERGEANT";
 					skill=0.5;
-					init="this moveInCargo indIFV1;";
+					init="if (isServer) then {this moveInCargo indIFV1;}";
 				};
 				class Item2
 				{
@@ -849,7 +813,7 @@ class Mission
 					side="GUER";
 					vehicle="I_soldier_F";
 					skill=0.40000001;
-					init="this moveInCargo indIFV1;";
+					init="if (isServer) then {this moveInCargo indIFV1;}";
 				};
 				class Item3
 				{
@@ -860,7 +824,7 @@ class Mission
 					vehicle="I_Soldier_LAT_F";
 					rank="CORPORAL";
 					skill=0.44999999;
-					init="this moveInCargo indIFV1;";
+					init="if (isServer) then {this moveInCargo indIFV1;}";
 				};
 				class Item4
 				{
@@ -881,7 +845,7 @@ class Mission
 					vehicle="I_Soldier_TL_F";
 					rank="SERGEANT";
 					skill=0.5;
-					init="this moveInCargo indIFV1;";
+					init="if (isServer) then {this moveInCargo indIFV1;}";
 				};
 				class Item6
 				{
@@ -892,7 +856,7 @@ class Mission
 					vehicle="I_Soldier_AR_F";
 					rank="CORPORAL";
 					skill=0.44999999;
-					init="this moveInCargo indIFV1;";
+					init="if (isServer) then {this moveInCargo indIFV1;}";
 				};
 				class Item7
 				{
@@ -902,7 +866,7 @@ class Mission
 					side="GUER";
 					vehicle="I_Soldier_A_F";
 					skill=0.40000001;
-					init="this moveInCargo indIFV1;";
+					init="if (isServer) then {this moveInCargo indIFV1;}";
 				};
 				class Item8
 				{
@@ -912,7 +876,7 @@ class Mission
 					side="GUER";
 					vehicle="I_medic_F";
 					skill=0.40000001;
-					init="this moveInCargo indIFV1;";
+					init="if (isServer) then {this moveInCargo indIFV1;}";
 				};
 			};
 			class Waypoints
@@ -921,12 +885,12 @@ class Mission
 				class Item0
 				{
 					position[]={19883.455,69.22683,11722.306};
-					synchronizations[]={43};
+					synchronizations[]={42};
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					syncId=25;
+					syncId=24;
 				};
 				class Item1
 				{
@@ -975,12 +939,12 @@ class Mission
 				{
 					position[]={11657.861,23.577894,11899.662};
 					type="LOITER";
-					synchronizations[]={44};
+					synchronizations[]={43};
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					syncId=26;
+					syncId=25;
 				};
 				class Item1
 				{
@@ -1065,12 +1029,12 @@ class Mission
 				class Item0
 				{
 					position[]={19872.168,69.976517,11768.837};
-					synchronizations[]={43};
+					synchronizations[]={42};
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					syncId=27;
+					syncId=26;
 				};
 				class Item1
 				{
@@ -1085,12 +1049,12 @@ class Mission
 				{
 					position[]={20642.479,41.249168,9050.7568};
 					type="TR UNLOAD";
-					synchronizations[]={29};
+					synchronizations[]={28};
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					syncId=28;
+					syncId=27;
 				};
 			};
 		};
@@ -1109,7 +1073,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="this moveInCargo indTruck1;";
+					init="if (isServer) then {this moveInCargo indTruck1;}";
 				};
 				class Item1
 				{
@@ -1118,7 +1082,7 @@ class Mission
 					side="GUER";
 					vehicle="I_soldier_F";
 					skill=0.40000001;
-					init="this moveInCargo indTruck1;";
+					init="if (isServer) then {this moveInCargo indTruck1;}";
 				};
 				class Item2
 				{
@@ -1128,7 +1092,7 @@ class Mission
 					vehicle="I_Soldier_LAT_F";
 					rank="CORPORAL";
 					skill=0.44999999;
-					init="this moveInCargo indTruck1;";
+					init="if (isServer) then {this moveInCargo indTruck1;}";
 				};
 				class Item3
 				{
@@ -1137,7 +1101,7 @@ class Mission
 					side="GUER";
 					vehicle="I_Soldier_M_F";
 					skill=0.40000001;
-					init="this moveInCargo indTruck1;";
+					init="if (isServer) then {this moveInCargo indTruck1;}";
 				};
 				class Item4
 				{
@@ -1147,7 +1111,7 @@ class Mission
 					vehicle="I_Soldier_TL_F";
 					rank="SERGEANT";
 					skill=0.5;
-					init="this moveInCargo indTruck1;";
+					init="if (isServer) then {this moveInCargo indTruck1;}";
 				};
 				class Item5
 				{
@@ -1157,7 +1121,7 @@ class Mission
 					vehicle="I_Soldier_AR_F";
 					rank="CORPORAL";
 					skill=0.44999999;
-					init="this moveInCargo indTruck1;";
+					init="if (isServer) then {this moveInCargo indTruck1;}";
 				};
 				class Item6
 				{
@@ -1166,7 +1130,7 @@ class Mission
 					side="GUER";
 					vehicle="I_Soldier_A_F";
 					skill=0.40000001;
-					init="this moveInCargo indTruck1;";
+					init="if (isServer) then {this moveInCargo indTruck1;}";
 				};
 				class Item7
 				{
@@ -1175,7 +1139,7 @@ class Mission
 					side="GUER";
 					vehicle="I_medic_F";
 					skill=0.40000001;
-					init="this moveInCargo indTruck1;";
+					init="if (isServer) then {this moveInCargo indTruck1;}";
 				};
 			};
 			class Waypoints
@@ -1185,12 +1149,12 @@ class Mission
 				{
 					position[]={20632.656,40.804668,9037.7461};
 					type="GETOUT";
-					synchronizations[]={28};
+					synchronizations[]={27};
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					syncId=29;
+					syncId=28;
 				};
 				class Item1
 				{
@@ -1239,12 +1203,12 @@ class Mission
 				class Item0
 				{
 					position[]={17084.816,21.100744,11954.728};
-					synchronizations[]={45};
+					synchronizations[]={44};
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					syncId=30;
+					syncId=29;
 				};
 				class Item1
 				{
@@ -1285,7 +1249,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="if (isServer) then {[group this, getPos this, 100] call BIS_fnc_taskPatrol; this disableTIEquipment true;}";
+					init="if (isServer) then {[group this, getPos this, 200] call BIS_fnc_taskPatrol; this disableTIEquipment true;}";
 				};
 			};
 		};
@@ -1386,12 +1350,12 @@ class Mission
 				{
 					position[]={11614.446,23.052483,11885.722};
 					type="LOAD";
-					synchronizations[]={44,39,41};
+					synchronizations[]={43,38,40};
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					syncId=31;
+					syncId=30;
 				};
 				class Item1
 				{
@@ -1400,12 +1364,12 @@ class Mission
 					combatMode="BLUE";
 					speed="NORMAL";
 					combat="CARELESS";
-					synchronizations[]={40,42};
+					synchronizations[]={39,41};
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					syncId=32;
+					syncId=31;
 				};
 				class Item2
 				{
@@ -1445,12 +1409,12 @@ class Mission
 				class Item0
 				{
 					position[]={16797.342,13.02809,11766.53};
-					synchronizations[]={45};
+					synchronizations[]={44};
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					syncId=33;
+					syncId=32;
 				};
 				class Item1
 				{
@@ -1464,12 +1428,12 @@ class Mission
 				{
 					position[]={18162.105,100.51121,10250.646};
 					type="TR UNLOAD";
-					synchronizations[]={35};
+					synchronizations[]={34};
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					syncId=34;
+					syncId=33;
 				};
 			};
 		};
@@ -1488,7 +1452,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="this moveInCargo indTruck2;";
+					init="if (isServer) then {this moveInCargo indTruck2;}";
 				};
 				class Item1
 				{
@@ -1497,7 +1461,7 @@ class Mission
 					side="GUER";
 					vehicle="I_soldier_F";
 					skill=0.40000001;
-					init="this moveInCargo indTruck2;";
+					init="if (isServer) then {this moveInCargo indTruck2;}";
 				};
 				class Item2
 				{
@@ -1507,7 +1471,7 @@ class Mission
 					vehicle="I_Soldier_LAT_F";
 					rank="CORPORAL";
 					skill=0.44999999;
-					init="this moveInCargo indTruck2;";
+					init="if (isServer) then {this moveInCargo indTruck2;}";
 				};
 				class Item3
 				{
@@ -1516,7 +1480,7 @@ class Mission
 					side="GUER";
 					vehicle="I_Soldier_M_F";
 					skill=0.40000001;
-					init="this moveInCargo indTruck2;";
+					init="if (isServer) then {this moveInCargo indTruck2;}";
 				};
 				class Item4
 				{
@@ -1526,7 +1490,7 @@ class Mission
 					vehicle="I_Soldier_TL_F";
 					rank="SERGEANT";
 					skill=0.5;
-					init="this moveInCargo indTruck2;";
+					init="if (isServer) then {this moveInCargo indTruck2;}";
 				};
 				class Item5
 				{
@@ -1536,7 +1500,7 @@ class Mission
 					vehicle="I_Soldier_AR_F";
 					rank="CORPORAL";
 					skill=0.44999999;
-					init="this moveInCargo indTruck2;";
+					init="if (isServer) then {this moveInCargo indTruck2;}";
 				};
 				class Item6
 				{
@@ -1545,7 +1509,7 @@ class Mission
 					side="GUER";
 					vehicle="I_Soldier_A_F";
 					skill=0.40000001;
-					init="this moveInCargo indTruck2;";
+					init="if (isServer) then {this moveInCargo indTruck2;}";
 				};
 				class Item7
 				{
@@ -1554,7 +1518,7 @@ class Mission
 					side="GUER";
 					vehicle="I_medic_F";
 					skill=0.40000001;
-					init="this moveInCargo indTruck2;";
+					init="if (isServer) then {this moveInCargo indTruck2;}";
 				};
 			};
 			class Waypoints
@@ -1564,12 +1528,12 @@ class Mission
 				{
 					position[]={18169.883,100.95742,10255.453};
 					type="GETOUT";
-					synchronizations[]={34};
+					synchronizations[]={33};
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					syncId=35;
+					syncId=34;
 				};
 				class Item1
 				{
@@ -1606,12 +1570,12 @@ class Mission
 				class Item0
 				{
 					position[]={17487.922,23.258982,12182.316};
-					synchronizations[]={45};
+					synchronizations[]={44};
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					syncId=36;
+					syncId=35;
 				};
 				class Item1
 				{
@@ -1625,12 +1589,12 @@ class Mission
 				{
 					position[]={18523.033,61.187759,10698.865};
 					type="TR UNLOAD";
-					synchronizations[]={38};
+					synchronizations[]={37};
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					syncId=37;
+					syncId=36;
 				};
 			};
 		};
@@ -1650,7 +1614,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="this moveInCargo indTruck3;";
+					init="if (isServer) then {this moveInCargo indTruck3;}";
 				};
 				class Item1
 				{
@@ -1660,7 +1624,7 @@ class Mission
 					side="GUER";
 					vehicle="I_soldier_F";
 					skill=0.40000001;
-					init="this moveInCargo indTruck3;";
+					init="if (isServer) then {this moveInCargo indTruck3;}";
 				};
 				class Item2
 				{
@@ -1671,7 +1635,7 @@ class Mission
 					vehicle="I_Soldier_LAT_F";
 					rank="CORPORAL";
 					skill=0.44999999;
-					init="this moveInCargo indTruck3;";
+					init="if (isServer) then {this moveInCargo indTruck3;}";
 				};
 				class Item3
 				{
@@ -1681,7 +1645,7 @@ class Mission
 					side="GUER";
 					vehicle="I_Soldier_M_F";
 					skill=0.40000001;
-					init="this moveInCargo indTruck3;";
+					init="if (isServer) then {this moveInCargo indTruck3;}";
 				};
 				class Item4
 				{
@@ -1692,7 +1656,7 @@ class Mission
 					vehicle="I_Soldier_TL_F";
 					rank="SERGEANT";
 					skill=0.5;
-					init="this moveInCargo indTruck3;";
+					init="if (isServer) then {this moveInCargo indTruck3;}";
 				};
 				class Item5
 				{
@@ -1703,7 +1667,7 @@ class Mission
 					vehicle="I_Soldier_AR_F";
 					rank="CORPORAL";
 					skill=0.44999999;
-					init="this moveInCargo indTruck3;";
+					init="if (isServer) then {this moveInCargo indTruck3;}";
 				};
 				class Item6
 				{
@@ -1713,7 +1677,7 @@ class Mission
 					side="GUER";
 					vehicle="I_Soldier_A_F";
 					skill=0.40000001;
-					init="this moveInCargo indTruck3;";
+					init="if (isServer) then {this moveInCargo indTruck3;}";
 				};
 				class Item7
 				{
@@ -1723,7 +1687,7 @@ class Mission
 					side="GUER";
 					vehicle="I_medic_F";
 					skill=0.40000001;
-					init="this moveInCargo indTruck3;";
+					init="if (isServer) then {this moveInCargo indTruck3;}";
 				};
 			};
 			class Waypoints
@@ -1733,12 +1697,12 @@ class Mission
 				{
 					position[]={18529.697,60.90358,10704.375};
 					type="GETOUT";
-					synchronizations[]={37};
+					synchronizations[]={36};
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					syncId=38;
+					syncId=37;
 				};
 				class Item1
 				{
@@ -1834,23 +1798,23 @@ class Mission
 				{
 					position[]={11603.489,23.117887,11882.172};
 					type="GETIN";
+					synchronizations[]={30};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					syncId=38;
+				};
+				class Item1
+				{
+					position[]={18130.898,99.071533,9717.6289};
+					type="GETOUT";
 					synchronizations[]={31};
 					class Effects
 					{
 					};
 					showWP="NEVER";
 					syncId=39;
-				};
-				class Item1
-				{
-					position[]={18130.898,99.071533,9717.6289};
-					type="GETOUT";
-					synchronizations[]={32};
-					class Effects
-					{
-					};
-					showWP="NEVER";
-					syncId=40;
 				};
 				class Item2
 				{
@@ -1946,23 +1910,23 @@ class Mission
 				{
 					position[]={11593.537,23.11875,11882.176};
 					type="GETIN";
+					synchronizations[]={30};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					syncId=40;
+				};
+				class Item1
+				{
+					position[]={18133.641,98.791077,9702.5244};
+					type="GETOUT";
 					synchronizations[]={31};
 					class Effects
 					{
 					};
 					showWP="NEVER";
 					syncId=41;
-				};
-				class Item1
-				{
-					position[]={18133.641,98.791077,9702.5244};
-					type="GETOUT";
-					synchronizations[]={32};
-					class Effects
-					{
-					};
-					showWP="NEVER";
-					syncId=42;
 				};
 				class Item2
 				{
@@ -2123,7 +2087,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					syncId=2;
-					synchronizations[]={46,4};
+					synchronizations[]={45,4};
 				};
 			};
 		};
@@ -2229,7 +2193,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					syncId=3;
-					synchronizations[]={47};
+					synchronizations[]={46};
 				};
 			};
 		};
@@ -2316,7 +2280,7 @@ class Mission
 					text="F3_preMount_NATO";
 					init="[synchronizedObjects this,[""GrpNATO_ASL"",""GrpNATO_A1"",""GrpNATO_A2"",""GrpNATO_A3""],false,false] call f_fnc_mountGroups;";
 					syncId=5;
-					synchronizations[]={21};
+					synchronizations[]={20};
 				};
 			};
 		};
@@ -2337,7 +2301,7 @@ class Mission
 					text="F3_preMount_NATO_1";
 					init="[synchronizedObjects this,[""GrpNATO_BSL"",""GrpNATO_B1"",""GrpNATO_B2"",""GrpNATO_B3""],false,false] call f_fnc_mountGroups;";
 					syncId=6;
-					synchronizations[]={22};
+					synchronizations[]={21};
 				};
 			};
 		};
@@ -2358,7 +2322,7 @@ class Mission
 					text="F3_preMount_NATO_2";
 					init="[synchronizedObjects this,[""GrpNATO_CSL"",""GrpNATO_C1"",""GrpNATO_C2"",""GrpNATO_C3""],false,false] call f_fnc_mountGroups;";
 					syncId=7;
-					synchronizations[]={23};
+					synchronizations[]={22};
 				};
 			};
 		};
@@ -3562,8 +3526,6 @@ class Mission
 					leader=1;
 					lock="UNLOCKED";
 					skill=0.60000002;
-					syncId=14;
-					synchronizations[]={17};
 				};
 			};
 		};
@@ -3648,8 +3610,8 @@ class Mission
 					vehicle="B_HMG_01_high_F";
 					leader=1;
 					skill=0.60000002;
-					syncId=15;
-					synchronizations[]={17};
+					syncId=14;
+					synchronizations[]={16};
 				};
 			};
 		};
@@ -3668,8 +3630,8 @@ class Mission
 					vehicle="B_HMG_01_high_F";
 					leader=1;
 					skill=0.60000002;
-					syncId=16;
-					synchronizations[]={17};
+					syncId=15;
+					synchronizations[]={16};
 				};
 			};
 		};
@@ -3728,8 +3690,8 @@ class Mission
 					leader=1;
 					lock="UNLOCKED";
 					skill=0.60000002;
-					syncId=17;
-					synchronizations[]={16,15,20,19,18,14};
+					syncId=16;
+					synchronizations[]={15,14,19,18,17};
 				};
 			};
 		};
@@ -3748,7 +3710,7 @@ class Mission
 					vehicle="B_crew_F";
 					leader=1;
 					skill=0.60000002;
-					init="[this,""LISTEN_BRIEFING""] call BIS_fnc_ambientAnim;";
+					init="if (isServer) then {[this,""LISTEN_BRIEFING""] call BIS_fnc_ambientAnim;}";
 				};
 			};
 		};
@@ -3767,7 +3729,7 @@ class Mission
 					vehicle="B_officer_F";
 					leader=1;
 					skill=0.60000002;
-					init="[this,""BRIEFING"", ""ASIS""] call BIS_fnc_ambientAnim;";
+					init="if (isServer) then {[this,""BRIEFING"", ""ASIS""] call BIS_fnc_ambientAnim;}";
 				};
 			};
 		};
@@ -3780,13 +3742,13 @@ class Mission
 				class Item0
 				{
 					position[]={20825.854,27.587597,7281.5732};
-					azimut=326.19049;
+					azimut=326.19;
 					id=196;
 					side="WEST";
 					vehicle="B_crew_F";
 					leader=1;
 					skill=0.60000002;
-					init="[this,""LISTEN_BRIEFING""] call BIS_fnc_ambientAnim;";
+					init="if (isServer) then {[this,""LISTEN_BRIEFING""] call BIS_fnc_ambientAnim;}";
 				};
 			};
 		};
@@ -3805,7 +3767,7 @@ class Mission
 					vehicle="B_Soldier_SL_F";
 					leader=1;
 					skill=0.60000002;
-					init="[this,""STAND""] call BIS_fnc_ambientAnim;";
+					init="if (isServer) then {[this,""STAND""] call BIS_fnc_ambientAnim;}";
 				};
 			};
 		};
@@ -3824,7 +3786,7 @@ class Mission
 					vehicle="B_recon_JTAC_F";
 					leader=1;
 					skill=0.60000002;
-					init="[this,""STAND""] call BIS_fnc_ambientAnim;";
+					init="if (isServer) then {[this,""STAND""] call BIS_fnc_ambientAnim;}";
 				};
 			};
 		};
@@ -3843,7 +3805,7 @@ class Mission
 					vehicle="B_recon_TL_F";
 					leader=1;
 					skill=0.60000002;
-					init="[this,""STAND""] call BIS_fnc_ambientAnim;";
+					init="if (isServer) then {[this,""STAND""] call BIS_fnc_ambientAnim;}";
 				};
 			};
 		};
@@ -3862,7 +3824,7 @@ class Mission
 					vehicle="B_recon_medic_F";
 					leader=1;
 					skill=0.60000002;
-					init="[this,""STAND""] call BIS_fnc_ambientAnim;";
+					init="if (isServer) then {[this,""STAND""] call BIS_fnc_ambientAnim;}";
 				};
 			};
 		};
@@ -3881,7 +3843,7 @@ class Mission
 					vehicle="B_recon_LAT_F";
 					leader=1;
 					skill=0.60000002;
-					init="[this,""STAND""] call BIS_fnc_ambientAnim;";
+					init="if (isServer) then {[this,""STAND""] call BIS_fnc_ambientAnim;}";
 				};
 			};
 		};
@@ -3900,7 +3862,7 @@ class Mission
 					vehicle="B_Sharpshooter_F";
 					leader=1;
 					skill=0.60000002;
-					init="[this,""SIT_LOW""] call BIS_fnc_ambientAnim;";
+					init="if (isServer) then {[this,""SIT_LOW""] call BIS_fnc_ambientAnim;}";
 				};
 			};
 		};
@@ -3919,7 +3881,7 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					leader=1;
 					skill=0.60000002;
-					init="[this,""GUARD"",""FULL""] call BIS_fnc_ambientAnim;";
+					init="if (isServer) then {[this,""GUARD"",""FULL""] call BIS_fnc_ambientAnim;}";
 				};
 			};
 		};
@@ -3938,7 +3900,7 @@ class Mission
 					vehicle="B_soldier_M_F";
 					leader=1;
 					skill=0.60000002;
-					init="[this,""STAND""] call BIS_fnc_ambientAnim;";
+					init="if (isServer) then {[this,""STAND""] call BIS_fnc_ambientAnim;}";
 				};
 			};
 		};
@@ -3957,7 +3919,7 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					leader=1;
 					skill=0.60000002;
-					init="[this,""GUARD"",""FULL""] call BIS_fnc_ambientAnim;";
+					init="if (isServer) then {[this,""GUARD"",""FULL""] call BIS_fnc_ambientAnim;}";
 				};
 			};
 		};
@@ -3976,7 +3938,7 @@ class Mission
 					vehicle="B_Soldier_F";
 					leader=1;
 					skill=0.60000002;
-					init="[this,""STAND""] call BIS_fnc_ambientAnim;";
+					init="if (isServer) then {[this,""STAND""] call BIS_fnc_ambientAnim;}";
 				};
 			};
 		};
@@ -3995,7 +3957,7 @@ class Mission
 					vehicle="B_Soldier_F";
 					leader=1;
 					skill=0.60000002;
-					init="[this,""SIT_LOW""] call BIS_fnc_ambientAnim;";
+					init="if (isServer) then {[this,""SIT_LOW""] call BIS_fnc_ambientAnim;}";
 				};
 			};
 		};
@@ -4014,7 +3976,7 @@ class Mission
 					vehicle="B_medic_F";
 					leader=1;
 					skill=0.60000002;
-					init="[this,""LISTEN_BRIEFING""] call BIS_fnc_ambientAnim;";
+					init="if (isServer) then {[this,""LISTEN_BRIEFING""] call BIS_fnc_ambientAnim;}";
 				};
 			};
 		};
@@ -4033,7 +3995,7 @@ class Mission
 					vehicle="B_soldier_AR_F";
 					leader=1;
 					skill=0.60000002;
-					init="[this,""STAND""] call BIS_fnc_ambientAnim;";
+					init="if (isServer) then {[this,""STAND""] call BIS_fnc_ambientAnim;}";
 				};
 			};
 		};
@@ -4052,7 +4014,7 @@ class Mission
 					vehicle="B_Soldier_TL_F";
 					leader=1;
 					skill=0.60000002;
-					init="[this,""BRIEFING""] call BIS_fnc_ambientAnim;";
+					init="if (isServer) then {[this,""BRIEFING""] call BIS_fnc_ambientAnim;}";
 				};
 			};
 		};
@@ -4065,13 +4027,13 @@ class Mission
 				class Item0
 				{
 					position[]={20749.502,28.594191,7244.209};
-					azimut=394.69244;
+					azimut=394.69199;
 					id=211;
 					side="WEST";
 					vehicle="B_recon_F";
 					leader=1;
 					skill=0.60000002;
-					init="[this,""STAND""] call BIS_fnc_ambientAnim;";
+					init="if (isServer) then {[this,""STAND""] call BIS_fnc_ambientAnim;}";
 				};
 			};
 		};
@@ -4090,7 +4052,7 @@ class Mission
 					vehicle="B_helicrew_F";
 					leader=1;
 					skill=0.60000002;
-					init="[this,""STAND"",""LIGHT""] call BIS_fnc_ambientAnim;";
+					init="if (isServer) then {[this,""STAND"", ""LIGHT""] call BIS_fnc_ambientAnim;}";
 				};
 			};
 		};
@@ -4109,7 +4071,7 @@ class Mission
 					vehicle="B_helicrew_F";
 					leader=1;
 					skill=0.60000002;
-					init="[this,""STAND"", ""LIGHT""] call BIS_fnc_ambientAnim;";
+					init="if (isServer) then {[this,""STAND"", ""LIGHT""] call BIS_fnc_ambientAnim;}";
 				};
 			};
 		};
@@ -4122,13 +4084,13 @@ class Mission
 				class Item0
 				{
 					position[]={20750.703,28.492178,7245.3735};
-					azimut=221.31303;
+					azimut=221.313;
 					id=214;
 					side="WEST";
 					vehicle="B_recon_M_F";
 					leader=1;
 					skill=0.60000002;
-					init="[this,""STAND""] call BIS_fnc_ambientAnim;";
+					init="if (isServer) then {[this,""STAND""] call BIS_fnc_ambientAnim;}";
 				};
 			};
 		};
@@ -4147,8 +4109,8 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					syncId=18;
-					synchronizations[]={17};
+					syncId=17;
+					synchronizations[]={16};
 				};
 				class Item1
 				{
@@ -4233,7 +4195,7 @@ class Mission
 					vehicle="B_crew_F";
 					leader=1;
 					skill=0.60000002;
-					init="[this,""SIT_LOW""] call BIS_fnc_ambientAnim;";
+					init="if (isServer) then {[this,""SIT_LOW""] call BIS_fnc_ambientAnim;}";
 				};
 			};
 		};
@@ -4252,7 +4214,7 @@ class Mission
 					vehicle="B_crew_F";
 					leader=1;
 					skill=0.60000002;
-					init="[this,""STAND""] call BIS_fnc_ambientAnim;";
+					init="if (isServer) then {[this,""STAND""] call BIS_fnc_ambientAnim;}";
 				};
 			};
 		};
@@ -4265,13 +4227,13 @@ class Mission
 				class Item0
 				{
 					position[]={20952.834,25.501472,7267.8848};
-					azimut=206.51488;
+					azimut=206.515;
 					id=221;
 					side="WEST";
 					vehicle="B_engineer_F";
 					leader=1;
 					skill=0.60000002;
-					init="[this,""STAND""] call BIS_fnc_ambientAnim;";
+					init="if (isServer) then {[this,""STAND""] call BIS_fnc_ambientAnim;}";
 				};
 			};
 		};
@@ -4284,13 +4246,14 @@ class Mission
 				class Item0
 				{
 					position[]={21581.527,14.042839,7846.375};
-					azimut=500.57614;
+					azimut=500.57599;
+					special="NONE";
 					id=222;
 					side="WEST";
 					vehicle="B_Soldier_F";
 					leader=1;
 					skill=0.60000002;
-					init="[this,""SIT_LOW""] call BIS_fnc_ambientAnim;";
+					init="if (isServer) then {[this,""SIT_LOW""] call BIS_fnc_ambientAnim;}";
 				};
 			};
 		};
@@ -4303,13 +4266,14 @@ class Mission
 				class Item0
 				{
 					position[]={21582.861,14.060696,7845.9155};
-					azimut=-58.327324;
+					azimut=-58.327301;
+					special="NONE";
 					id=223;
 					side="WEST";
 					vehicle="B_Soldier_TL_F";
 					leader=1;
 					skill=0.60000002;
-					init="[this,""STAND""] call BIS_fnc_ambientAnim;";
+					init="if (isServer) then {[this,""STAND""] call BIS_fnc_ambientAnim;}";
 				};
 			};
 		};
@@ -4328,6 +4292,7 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.44999999;
+					init="if (isServer) then {[group this, getPos this, 100] call BIS_fnc_taskPatrol;}";
 				};
 				class Item1
 				{
@@ -4336,19 +4301,6 @@ class Mission
 					side="WEST";
 					vehicle="B_recon_F";
 					skill=0.40000001;
-				};
-			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={21505.896,14.065032,8055.1631};
-					expActiv="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
-					class Effects
-					{
-					};
-					showWP="NEVER";
 				};
 			};
 		};
@@ -4367,8 +4319,9 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.44999999;
-					syncId=19;
-					synchronizations[]={17};
+					init="if (isServer) then {[group this, getPos this, 100] call BIS_fnc_taskPatrol;}";
+					syncId=18;
+					synchronizations[]={16};
 				};
 				class Item1
 				{
@@ -4377,19 +4330,6 @@ class Mission
 					side="WEST";
 					vehicle="B_recon_F";
 					skill=0.40000001;
-				};
-			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={21707.652,15.077187,7563.708};
-					expActiv="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
-					class Effects
-					{
-					};
-					showWP="NEVER";
 				};
 			};
 		};
@@ -4408,8 +4348,9 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.44999999;
-					syncId=20;
-					synchronizations[]={17};
+					init="if (isServer) then {[group this, getPos this, 100] call BIS_fnc_taskPatrol;}";
+					syncId=19;
+					synchronizations[]={16};
 				};
 				class Item1
 				{
@@ -4418,19 +4359,6 @@ class Mission
 					side="WEST";
 					vehicle="B_recon_F";
 					skill=0.40000001;
-				};
-			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={20793.514,36.0173,6752.04};
-					expActiv="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
-					class Effects
-					{
-					};
-					showWP="NEVER";
 				};
 			};
 		};
@@ -4450,7 +4378,7 @@ class Mission
 					leader=1;
 					lock="LOCKEDPLAYER";
 					skill=0.60000002;
-					init="[this,""REPAIR_VEH_PRONE""] call BIS_fnc_ambientAnim;";
+					init="if (isServer) then {[this,""REPAIR_VEH_PRONE""] call BIS_fnc_ambientAnim;}";
 				};
 			};
 		};
@@ -4542,7 +4470,7 @@ class Mission
 			skill=0.60000002;
 			text="VehNATO_AV";
 			init="[""v_ifv"",this] call f_fnc_assignGear; this disableTIEquipment true;";
-			syncId=21;
+			syncId=20;
 			synchronizations[]={5};
 		};
 		class Item9
@@ -4555,7 +4483,7 @@ class Mission
 			skill=0.60000002;
 			text="VehNATO_BV";
 			init="[""v_ifv"",this] call f_fnc_assignGear; this disableTIEquipment true;";
-			syncId=22;
+			syncId=21;
 			synchronizations[]={6};
 		};
 		class Item10
@@ -4568,7 +4496,7 @@ class Mission
 			skill=0.60000002;
 			text="VehNATO_CV";
 			init="[""v_ifv"",this] call f_fnc_assignGear; this disableTIEquipment true;";
-			syncId=23;
+			syncId=22;
 			synchronizations[]={7};
 		};
 		class Item11
@@ -4844,7 +4772,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=8;
+		items=10;
 		class Item0
 		{
 			position[]={10940.658,15.065486,10820.807};
@@ -4913,6 +4841,18 @@ class Mission
 			name="mrkSupply";
 			type="Empty";
 		};
+		class Item8
+		{
+			position[]={18659.523,209.74289,10204.219};
+			name="counter";
+			type="Empty";
+		};
+		class Item9
+		{
+			position[]={20788.795,29.763889,7182.7236};
+			name="hunters";
+			type="Empty";
+		};
 	};
 	class Sensors
 	{
@@ -4930,8 +4870,8 @@ class Mission
 			class Effects
 			{
 			};
-			synchronizations[]={24,25,27};
-			syncId=43;
+			synchronizations[]={23,24,26};
+			syncId=42;
 		};
 		class Item1
 		{
@@ -4946,8 +4886,8 @@ class Mission
 			class Effects
 			{
 			};
-			synchronizations[]={26,31};
-			syncId=44;
+			synchronizations[]={25,30};
+			syncId=43;
 		};
 		class Item2
 		{
@@ -4967,8 +4907,8 @@ class Mission
 			class Effects
 			{
 			};
-			synchronizations[]={30,33,36};
-			syncId=45;
+			synchronizations[]={29,32,35};
+			syncId=44;
 		};
 		class Item3
 		{
@@ -5002,7 +4942,7 @@ class Mission
 			{
 			};
 			synchronizations[]={2};
-			syncId=46;
+			syncId=45;
 		};
 		class Item5
 		{
@@ -5039,7 +4979,7 @@ class Mission
 			{
 			};
 			synchronizations[]={3};
-			syncId=47;
+			syncId=46;
 		};
 		class Item7
 		{
