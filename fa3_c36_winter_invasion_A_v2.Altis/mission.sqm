@@ -99,7 +99,7 @@ class Mission
 	randomSeed=11823142;
 	class Intel
 	{
-		briefingName="fa3_c36_winter_invasion_part_I_v2";
+		briefingName="fa3_c36_winter_invasion_part_I_v3";
 		overviewText="2 NATO Squads lead the invasion of southern Altis.";
 		resistanceWest=0;
 		resistanceEast=1;
@@ -356,6 +356,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
+					init="if (isServer) then {[group this, getPos this, 100] call BIS_fnc_taskPatrol;}";
 				};
 				class Item1
 				{
@@ -383,19 +384,6 @@ class Mission
 					skill=0.40000001;
 				};
 			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={20787.813,37.571144,6728.4028};
-					expActiv="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
-					class Effects
-					{
-					};
-					showWP="NEVER";
-				};
-			};
 		};
 		class Item7
 		{
@@ -405,17 +393,18 @@ class Mission
 				items=8;
 				class Item0
 				{
-					position[]={21687.631,14.892071,7617.2422};
+					position[]={20768.334,36.597279,6790.3604};
 					id=18;
 					side="GUER";
 					vehicle="I_Soldier_SL_F";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
+					init="if (isServer) then {[group this, getPos this, 100] call BIS_fnc_taskPatrol;}";
 				};
 				class Item1
 				{
-					position[]={21692.631,14.911717,7615.2422};
+					position[]={20773.334,36.427925,6788.3604};
 					id=19;
 					side="GUER";
 					vehicle="I_soldier_AR_F";
@@ -423,7 +412,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={21682.631,14.935241,7615.2422};
+					position[]={20763.334,36.851086,6788.3604};
 					id=20;
 					side="GUER";
 					vehicle="I_soldier_GL_F";
@@ -432,7 +421,7 @@ class Mission
 				};
 				class Item3
 				{
-					position[]={21697.631,14.930861,7612.2422};
+					position[]={20778.334,36.285866,6785.3604};
 					id=21;
 					side="GUER";
 					vehicle="I_soldier_M_F";
@@ -441,7 +430,7 @@ class Mission
 				};
 				class Item4
 				{
-					position[]={21677.631,14.681012,7612.2422};
+					position[]={20758.334,37.181538,6785.3604};
 					id=22;
 					side="GUER";
 					vehicle="I_soldier_AT_F";
@@ -450,7 +439,7 @@ class Mission
 				};
 				class Item5
 				{
-					position[]={21702.631,14.948195,7608.2422};
+					position[]={20783.334,36.156517,6781.3604};
 					id=23;
 					side="GUER";
 					vehicle="I_soldier_AAT_F";
@@ -458,7 +447,7 @@ class Mission
 				};
 				class Item6
 				{
-					position[]={21672.631,14.623947,7608.2422};
+					position[]={20753.334,37.43338,6781.3604};
 					id=24;
 					side="GUER";
 					vehicle="I_soldier_A_F";
@@ -466,24 +455,11 @@ class Mission
 				};
 				class Item7
 				{
-					position[]={21707.631,14.96703,7603.2422};
+					position[]={20788.334,36.028023,6776.3604};
 					id=25;
 					side="GUER";
 					vehicle="I_medic_F";
 					skill=0.40000001;
-				};
-			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={21685.973,14.75356,7623.2134};
-					expActiv="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
-					class Effects
-					{
-					};
-					showWP="NEVER";
 				};
 			};
 		};
@@ -605,13 +581,14 @@ class Mission
 				items=4;
 				class Item0
 				{
-					position[]={21608.156,15.447712,7550.2661};
+					position[]={21607.645,15.331928,7552.6558};
 					id=29;
 					side="GUER";
 					vehicle="I_Soldier_TL_F";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
+					init="if (isServer) then {[group this, getPos this, 100] call BIS_fnc_taskPatrol;}";
 				};
 				class Item1
 				{
@@ -637,19 +614,6 @@ class Mission
 					side="GUER";
 					vehicle="I_Soldier_AAA_F";
 					skill=0.40000001;
-				};
-			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={21602.855,15.336421,7555.417};
-					expActiv="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
-					class Effects
-					{
-					};
-					showWP="NEVER";
 				};
 			};
 		};
@@ -707,6 +671,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
+					init="if (isServer) then {[group this, getPos this, 100] call BIS_fnc_taskPatrol;}";
 				};
 				class Item1
 				{
@@ -734,19 +699,6 @@ class Mission
 					skill=0.40000001;
 				};
 			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={20865.598,27.77281,7269.5693};
-					expActiv="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
-					class Effects
-					{
-					};
-					showWP="NEVER";
-				};
-			};
 		};
 		class Item13
 		{
@@ -763,6 +715,7 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.44999999;
+					init="if (isServer) then {[group this, getPos this, 100] call BIS_fnc_taskPatrol;}";
 				};
 				class Item1
 				{
@@ -771,19 +724,6 @@ class Mission
 					side="GUER";
 					vehicle="I_soldier_F";
 					skill=0.40000001;
-				};
-			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={21066.342,20.15987,7413.6768};
-					expActiv="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
-					class Effects
-					{
-					};
-					showWP="NEVER";
 				};
 			};
 		};
@@ -850,9 +790,9 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={18028.342,0.19,4671.4751};
+					position[]={18028.342,0.18728071,4671.4751};
 					speed="FULL";
-					expActiv="{deleteVehicle _x} forEach (crew H1); deleteVehicle H1; deleteVehicle doorTrigH1;";
+					expActiv="if (isServer) then {{deleteVehicle _x} forEach (crew H1); deleteVehicle H1; deleteVehicle doorTrigH1;}";
 					class Effects
 					{
 					};
@@ -905,9 +845,9 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={18777.924,-0.34999999,4120.3018};
+					position[]={18777.924,-0.35226977,4120.3018};
 					speed="FULL";
-					expActiv="{deleteVehicle _x} forEach (crew H2); deleteVehicle H2; deleteVehicle doorTrigH2;";
+					expActiv="if (isServer) then {{deleteVehicle _x} forEach (crew H2); deleteVehicle H2; deleteVehicle doorTrigH2;}";
 					class Effects
 					{
 					};
@@ -1035,17 +975,18 @@ class Mission
 				items=4;
 				class Item0
 				{
-					position[]={20781.111,36.216503,6783.7607};
+					position[]={21683.197,14.508564,7629.4956};
 					id=50;
 					side="GUER";
 					vehicle="I_Soldier_TL_F";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
+					init="if (isServer) then {[group this, getPos this, 100] call BIS_fnc_taskPatrol;}";
 				};
 				class Item1
 				{
-					position[]={20786.111,36.084808,6778.7607};
+					position[]={21688.197,14.720519,7624.4956};
 					id=51;
 					side="GUER";
 					vehicle="I_Soldier_AR_F";
@@ -1054,7 +995,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={20776.111,36.316326,6778.7607};
+					position[]={21678.197,14.491683,7624.4956};
 					id=52;
 					side="GUER";
 					vehicle="I_Soldier_GL_F";
@@ -1062,24 +1003,11 @@ class Mission
 				};
 				class Item3
 				{
-					position[]={20791.111,35.98188,6773.7607};
+					position[]={21693.197,14.890546,7619.4956};
 					id=53;
 					side="GUER";
 					vehicle="I_soldier_LAT_F";
 					skill=0.40000001;
-				};
-			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={20773.207,36.430969,6788.249};
-					expActiv="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
-					class Effects
-					{
-					};
-					showWP="NEVER";
 				};
 			};
 		};
@@ -1804,6 +1732,7 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.44999999;
+					init="if (isServer) then {[group this, getPos this, 100] call BIS_fnc_taskPatrol;}";
 				};
 				class Item1
 				{
@@ -1812,19 +1741,6 @@ class Mission
 					side="GUER";
 					vehicle="I_soldier_F";
 					skill=0.40000001;
-				};
-			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={21207.186,20.681622,7222.7251};
-					expActiv="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
-					class Effects
-					{
-					};
-					showWP="NEVER";
 				};
 			};
 		};
@@ -2108,7 +2024,7 @@ class Mission
 		};
 		class Item6
 		{
-			position[]={20814.006,35.422787,6766.3877};
+			position[]={21716.092,14.956885,7612.1226};
 			name="mrkSelakano";
 			type="n_inf";
 			colorName="ColorGUER";
@@ -2123,7 +2039,7 @@ class Mission
 		};
 		class Item8
 		{
-			position[]={21710.479,15.065879,7568.5713};
+			position[]={20791.182,36.491444,6741.6895};
 			name="mrkFeres";
 			type="n_inf";
 			colorName="ColorGUER";

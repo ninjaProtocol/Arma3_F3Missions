@@ -34,6 +34,8 @@ Version | Date | Notes
 0-0-5 | 23 08 2015 | Added Charlie, MMG, mortars(enemy).
 0-0-6 | 24 08 2015 | Bumped to v2, lots of changes after feedback.
 0-0-7 | 25 08 2015 | Edited slots
+0-0-8 | 11 11 2015 | tweaks, v3
+0-0-9 | 20 11 2015 | corrected taskPatrol locality, v4
 
 02. COPYRIGHT STATEMENT
 =======================
@@ -139,3 +141,9 @@ Modified: Added placement radius for two garrison logic objects.
 Tweaked: FIA Mortar dude's position.
 Removed: Garrison logic placement radii, other tweaks to garrisonLogic
 Third pubblic release, v3.
+
+0-0-9 | 20 11 2015
+Moved all taskPatrol calls to unit inits with isServer checks
+All sharpshooters are marksmen
+group positions tweaked
+v4 release

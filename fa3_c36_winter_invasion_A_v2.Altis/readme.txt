@@ -29,7 +29,7 @@ Version | Date | Notes
 
 0-0-1 | 09-10-2015 | First public release
 0-0-2 | 04-11-2015 | Small tweaks and touches
-
+0-0-3 | 20-11-2015 | Corrected taskPatrol locality
 
 
 02. COPYRIGHT STATEMENT
@@ -101,3 +101,8 @@ Helos now open and close rear doors during landing (via triggers).
 Code to delete triggers after helos are deleted at waypoints.
 Added more enemies in airfield (bunkers).
 First revision, second public version (v2).
+
+0-0-3 | 20-11-2015
+Moved all taskPatrol calls to unit inits with isServer guards
+Added isServer guards to helo waypoints with OnAct codes
+Moved some groups around to tweak difficulty.

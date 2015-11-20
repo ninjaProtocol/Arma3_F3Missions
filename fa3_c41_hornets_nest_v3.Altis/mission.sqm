@@ -78,8 +78,8 @@ class Mission
 		"a3_static_f",
 		"A3_Characters_F_INDEP",
 		"A3_Soft_F_MRAP_03",
-		"A3_Characters_F_Mark",
 		"A3_Characters_F_Gamma",
+		"A3_Characters_F_Mark",
 		"A3_Soft_F_Gamma_Offroad",
 		"a3_soft_f_offroad_01",
 		"A3_Modules_F_Sites",
@@ -100,7 +100,7 @@ class Mission
 	randomSeed=11823142;
 	class Intel
 	{
-		briefingName="fa3_c41_hornets_nest_v3";
+		briefingName="fa3_c41_hornets_nest_v4";
 		overviewText="Mechanized CSAT platoon re-takes the FIA stronghold of Sofia";
 		resistanceWest=0;
 		resistanceEast=1;
@@ -531,7 +531,7 @@ class Mission
 					special="NONE";
 					id=21;
 					side="WEST";
-					vehicle="B_G_Sharpshooter_F";
+					vehicle="B_G_Soldier_M_F";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
@@ -945,10 +945,11 @@ class Mission
 					position[]={25729.816,20.670345,21382.123};
 					id=40;
 					side="WEST";
-					vehicle="B_G_soldier_SL_F";
+					vehicle="B_G_Soldier_SL_F";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
+					init="if (isServer) then {[group this, getPos this, 100] call BIS_fnc_taskPatrol;}";
 				};
 				class Item1
 				{
@@ -1010,19 +1011,6 @@ class Mission
 					skill=0.40000001;
 				};
 			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={25695.953,20.3489,21347.318};
-					expActiv="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
-					class Effects
-					{
-					};
-					showWP="NEVER";
-				};
-			};
 		};
 		class Item18
 		{
@@ -1032,17 +1020,18 @@ class Mission
 				items=6;
 				class Item0
 				{
-					position[]={25577.971,23.373926,21496.219};
+					position[]={25452.029,22.2575,21406.264};
 					id=48;
 					side="WEST";
 					vehicle="B_G_Offroad_01_armed_F";
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.55000001;
+					init="if (isServer) then {[group this, getPos this, 200] call BIS_fnc_taskPatrol;}";
 				};
 				class Item1
 				{
-					position[]={25590.971,22.935686,21484.219};
+					position[]={25465.029,21.865591,21394.264};
 					id=49;
 					side="WEST";
 					vehicle="B_G_Soldier_TL_F";
@@ -1051,7 +1040,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={25572.971,23.418594,21491.219};
+					position[]={25447.029,22.155392,21401.264};
 					id=50;
 					side="WEST";
 					vehicle="B_G_Soldier_AR_F";
@@ -1060,7 +1049,7 @@ class Mission
 				};
 				class Item3
 				{
-					position[]={25602.971,22.768309,21471.219};
+					position[]={25477.029,21.131243,21381.264};
 					id=51;
 					side="WEST";
 					vehicle="B_G_Soldier_LAT_F";
@@ -1069,7 +1058,7 @@ class Mission
 				};
 				class Item4
 				{
-					position[]={25567.971,23.37496,21486.219};
+					position[]={25442.029,21.876701,21396.264};
 					id=52;
 					side="WEST";
 					vehicle="B_G_medic_F";
@@ -1078,25 +1067,12 @@ class Mission
 				};
 				class Item5
 				{
-					position[]={25607.971,23.136698,21466.219};
+					position[]={25482.029,20.875471,21376.264};
 					id=53;
 					side="WEST";
 					vehicle="B_G_Soldier_F";
 					rank="CORPORAL";
 					skill=0.44999999;
-				};
-			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={25461.143,22.134155,21401.549};
-					expActiv="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
-					class Effects
-					{
-					};
-					showWP="NEVER";
 				};
 			};
 		};
@@ -1108,17 +1084,18 @@ class Mission
 				items=6;
 				class Item0
 				{
-					position[]={25915.928,16.199163,21328.66};
+					position[]={25779.77,16.161064,21203.381};
 					id=54;
 					side="WEST";
-					vehicle="B_G_Offroad_01_F";
+					vehicle="B_G_Offroad_01_armed_F";
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.55000001;
+					init="if (isServer) then {[group this, getPos this, 200] call BIS_fnc_taskPatrol;}";
 				};
 				class Item1
 				{
-					position[]={25928.928,16.585075,21316.66};
+					position[]={25792.77,15.963877,21191.381};
 					id=55;
 					side="WEST";
 					vehicle="B_G_Soldier_TL_F";
@@ -1127,7 +1104,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={25910.928,15.810645,21323.66};
+					position[]={25774.77,16.241066,21198.381};
 					id=56;
 					side="WEST";
 					vehicle="B_G_Soldier_AR_F";
@@ -1136,7 +1113,7 @@ class Mission
 				};
 				class Item3
 				{
-					position[]={25940.928,16.243492,21303.66};
+					position[]={25804.77,15.726387,21178.381};
 					id=57;
 					side="WEST";
 					vehicle="B_G_Soldier_LAT_F";
@@ -1145,7 +1122,7 @@ class Mission
 				};
 				class Item4
 				{
-					position[]={25905.928,16.683695,21318.66};
+					position[]={25769.77,16.250586,21193.381};
 					id=58;
 					side="WEST";
 					vehicle="B_G_medic_F";
@@ -1154,25 +1131,12 @@ class Mission
 				};
 				class Item5
 				{
-					position[]={25945.928,16.132931,21298.66};
+					position[]={25809.77,15.605195,21173.381};
 					id=59;
 					side="WEST";
 					vehicle="B_G_Soldier_F";
 					rank="CORPORAL";
 					skill=0.44999999;
-				};
-			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={25799.1,16.326971,21233.99};
-					expActiv="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
-					class Effects
-					{
-					};
-					showWP="NEVER";
 				};
 			};
 		};
@@ -1184,17 +1148,18 @@ class Mission
 				items=4;
 				class Item0
 				{
-					position[]={25621.402,21.997046,21406.834};
+					position[]={25605.988,22.493038,21424.646};
 					id=60;
 					side="WEST";
 					vehicle="B_G_Soldier_TL_F";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
+					init="if (isServer) then {[group this, getPos this, 100] call BIS_fnc_taskPatrol;}";
 				};
 				class Item1
 				{
-					position[]={25626.402,21.761074,21401.834};
+					position[]={25610.988,22.545271,21419.646};
 					id=61;
 					side="WEST";
 					vehicle="B_G_Soldier_AR_F";
@@ -1203,7 +1168,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={25616.402,21.277948,21401.834};
+					position[]={25600.988,21.623653,21419.646};
 					id=62;
 					side="WEST";
 					vehicle="B_G_Soldier_LAT_F";
@@ -1211,24 +1176,11 @@ class Mission
 				};
 				class Item3
 				{
-					position[]={25631.402,21.313526,21396.834};
+					position[]={25615.988,22.468664,21414.646};
 					id=63;
 					side="WEST";
 					vehicle="B_G_medic_F";
 					skill=0.40000001;
-				};
-			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={25604.232,21.436897,21412.182};
-					expActiv="[group this, getPos this, 50] call BIS_fnc_taskPatrol;";
-					class Effects
-					{
-					};
-					showWP="NEVER";
 				};
 			};
 		};
@@ -2167,10 +2119,10 @@ class Mission
 				class Item0
 				{
 					position[]={25146.629,90.73719,21841.654};
-					azimut=109.99999;
+					azimut=110;
 					id=117;
 					side="WEST";
-					vehicle="B_G_Sharpshooter_F";
+					vehicle="B_G_Soldier_M_F";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
@@ -2276,6 +2228,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
+					init="if (isServer) then {[group this, getPos this, 100] call BIS_fnc_taskPatrol;}";
 				};
 				class Item1
 				{
@@ -2303,19 +2256,6 @@ class Mission
 					skill=0.40000001;
 				};
 			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={25481.713,21.265524,21385.684};
-					expActiv="[group this, getPos this, 50] call BIS_fnc_taskPatrol;";
-					class Effects
-					{
-					};
-					showWP="NEVER";
-				};
-			};
 		};
 		class Item47
 		{
@@ -2332,6 +2272,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
+					init="if (isServer) then {[group this, getPos this, 100] call BIS_fnc_taskPatrol;}";
 				};
 				class Item1
 				{
@@ -2359,19 +2300,6 @@ class Mission
 					skill=0.40000001;
 				};
 			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={25472.643,17.984726,21222.135};
-					expActiv="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
-					class Effects
-					{
-					};
-					showWP="NEVER";
-				};
-			};
 		};
 		class Item48
 		{
@@ -2388,6 +2316,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
+					init="if (isServer) then {[group this, getPos this, 100] call BIS_fnc_taskPatrol;}";
 				};
 				class Item1
 				{
@@ -2413,19 +2342,6 @@ class Mission
 					side="WEST";
 					vehicle="B_G_Soldier_LAT_F";
 					skill=0.40000001;
-				};
-			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={25651.23,19.523867,21307.629};
-					expActiv="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
-					class Effects
-					{
-					};
-					showWP="NEVER";
 				};
 			};
 		};
@@ -2519,18 +2435,19 @@ class Mission
 				items=8;
 				class Item0
 				{
-					position[]={25632.5,23.375669,21467.863};
+					position[]={25764.809,22.145138,21489.455};
 					azimut=205;
 					id=137;
 					side="WEST";
-					vehicle="B_G_soldier_SL_F";
+					vehicle="B_G_Soldier_SL_F";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
+					init="if (isServer) then {[group this, getPos this, 100] call BIS_fnc_taskPatrol;}";
 				};
 				class Item1
 				{
-					position[]={25630.082,22.501293,21474.508};
+					position[]={25762.391,22.273602,21496.1};
 					azimut=205;
 					id=138;
 					side="WEST";
@@ -2539,7 +2456,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={25639.145,22.66222,21470.281};
+					position[]={25771.453,22.300203,21491.873};
 					azimut=205;
 					id=139;
 					side="WEST";
@@ -2549,7 +2466,7 @@ class Mission
 				};
 				class Item3
 				{
-					position[]={25627.664,21.86211,21481.152};
+					position[]={25759.973,22.4771,21502.744};
 					azimut=205;
 					id=140;
 					side="WEST";
@@ -2559,7 +2476,7 @@ class Mission
 				};
 				class Item4
 				{
-					position[]={25645.789,21.82395,21472.699};
+					position[]={25778.098,22.428728,21494.291};
 					azimut=205;
 					id=141;
 					side="WEST";
@@ -2569,7 +2486,7 @@ class Mission
 				};
 				class Item5
 				{
-					position[]={25625.244,21.487511,21487.797};
+					position[]={25757.553,22.757391,21509.389};
 					azimut=205;
 					id=142;
 					side="WEST";
@@ -2578,7 +2495,7 @@ class Mission
 				};
 				class Item6
 				{
-					position[]={25652.434,20.735554,21475.119};
+					position[]={25784.742,22.48744,21496.711};
 					azimut=205;
 					id=143;
 					side="WEST";
@@ -2587,25 +2504,12 @@ class Mission
 				};
 				class Item7
 				{
-					position[]={25622.826,21.480761,21494.441};
+					position[]={25755.135,22.957212,21516.033};
 					azimut=205;
 					id=144;
 					side="WEST";
 					vehicle="B_G_medic_F";
 					skill=0.40000001;
-				};
-			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={25762.221,22.021523,21485.279};
-					expActiv="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
-					class Effects
-					{
-					};
-					showWP="NEVER";
 				};
 			};
 		};
@@ -2930,17 +2834,18 @@ class Mission
 				items=8;
 				class Item0
 				{
-					position[]={25159.1,35.486923,21509.678};
+					position[]={25147.488,30.959326,21365.969};
 					id=163;
 					side="WEST";
-					vehicle="B_G_soldier_SL_F";
+					vehicle="B_G_Soldier_SL_F";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
+					init="if (isServer) then {[group this, getPos this, 100] call BIS_fnc_taskPatrol;}";
 				};
 				class Item1
 				{
-					position[]={25164.1,34.971111,21504.678};
+					position[]={25152.488,30.679251,21360.969};
 					id=164;
 					side="WEST";
 					vehicle="B_G_soldier_AR_F";
@@ -2948,7 +2853,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={25154.1,34.889248,21504.678};
+					position[]={25142.488,30.952662,21360.969};
 					id=165;
 					side="WEST";
 					vehicle="B_G_Soldier_GL_F";
@@ -2957,7 +2862,7 @@ class Mission
 				};
 				class Item3
 				{
-					position[]={25169.1,34.471909,21499.678};
+					position[]={25157.488,30.393362,21355.969};
 					id=166;
 					side="WEST";
 					vehicle="B_G_Soldier_M_F";
@@ -2966,7 +2871,7 @@ class Mission
 				};
 				class Item4
 				{
-					position[]={25149.1,34.352898,21499.678};
+					position[]={25137.488,30.936567,21355.969};
 					id=167;
 					side="WEST";
 					vehicle="B_G_soldier_LAT_F";
@@ -2975,7 +2880,7 @@ class Mission
 				};
 				class Item5
 				{
-					position[]={25174.1,34.009048,21494.678};
+					position[]={25162.488,30.064804,21350.969};
 					id=168;
 					side="WEST";
 					vehicle="B_G_soldier_LAT_F";
@@ -2983,7 +2888,7 @@ class Mission
 				};
 				class Item6
 				{
-					position[]={25144.1,33.981575,21494.678};
+					position[]={25132.488,30.945303,21350.969};
 					id=169;
 					side="WEST";
 					vehicle="B_G_soldier_A_F";
@@ -2991,24 +2896,11 @@ class Mission
 				};
 				class Item7
 				{
-					position[]={25179.1,33.6063,21489.678};
+					position[]={25167.488,29.651556,21345.969};
 					id=170;
 					side="WEST";
 					vehicle="B_G_medic_F";
 					skill=0.40000001;
-				};
-			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={25139.246,31.460907,21373.799};
-					expActiv="[group this, getPos this, 100] call BIS_fnc_taskPatrol;";
-					class Effects
-					{
-					};
-					showWP="NEVER";
 				};
 			};
 		};
