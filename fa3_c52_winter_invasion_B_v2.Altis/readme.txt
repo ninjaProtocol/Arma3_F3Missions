@@ -83,9 +83,6 @@ i.e. I'm using a countown instead of a timeout. This was done to avoid accidentl
 timer if palyers left the area (while fighting back, etc.). Ideally, one would want to pause the timer,
 but that would involve scripts and I'm not in the mood for any more.
 
-Some ambient animations aren't playing on the FA mission testing server. Sitting and standing work fine. Not sure what's up.
-Leaving it in for now to test on the main server.
-
 All changelogs are for vX (where X={1,2,3...}) releases or bugfixes, not minor day-to-day work in-between. For my sanity.
 
 
@@ -108,4 +105,5 @@ added marker for final counterattack location.
 added marker for alternative CO, ENG transports
 put an isServer guard for all moveInCargo and ambient animation calls
 Moved all taskPatrol calls from waypoint OnAct fields to init fields with isServer checks. Was causing locallity issues. Thanks BIS.
+Only using SIT_LOW and STAND animations for decorative soldiers, because of server issues.
 Externally remains v2.
