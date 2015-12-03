@@ -29,6 +29,7 @@ Version | Date | Notes
 
 0-0-1 | 09-10-2015 | First public release
 0-0-2 | 26-10-2015 | Bug fix - init code, patrols
+0-0-3 | 03-12-2015 | Locality fixes
 
 
 
@@ -102,3 +103,7 @@ First release (v1).
 0-0-2 | 26-10-2015
 Added a check for server locality for some AI inits.
 Shifted the call to BIS_fnc_taskPatrol out of AI init and to waypoint init in view of locality considerations.
+
+0-0-3 | 03-12-2015
+Apparently waypoint on act fields suffer same locality issues. Therefore, shifted taskPatrol calls back to unit init with server checks.
+Removed "3DEN" from missions.sqm's addon list, because BIS broke it with Arma 3 v1.54.
