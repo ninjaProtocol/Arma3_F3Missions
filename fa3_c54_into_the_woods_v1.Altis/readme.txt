@@ -28,6 +28,7 @@ README CONTENTS
 Version | Date | Notes
 
 0-0-1 | 05-12-2015 | First release
+0-0-2 | 12-12-2015 | Minor Tweaks
 
 
 
@@ -88,3 +89,11 @@ Version | Date
 
 0-0-1 | 05 12 2015
 First Release
+
+0-0-2 | 12 12 2015
+Fixed a typo and the credits section.
+Made campfires light up only if night.
+Adjusted ambush squad's position so they're less likely to be killed before their ambush
+Made MANPAD dude independent from group
+Adjusted position of Bravo 1 to avoid players getting stuck
+Tweaked briefing marker to make things clearer.
