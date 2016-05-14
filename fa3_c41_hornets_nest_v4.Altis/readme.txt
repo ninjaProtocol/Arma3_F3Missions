@@ -147,3 +147,13 @@ Moved all taskPatrol calls to unit inits with isServer checks
 All sharpshooters are marksmen
 group positions tweaked
 v4 release
+
+0-1-0 | 05 04 2016
+Imported to 3D editor
+Removed mortar gunner
+Added sandbags and fortifications at various places
+Unlinked technicals from groups
+Tweaks to some garrisons
+Tweaked positions of some units
+Changed all sharpshooters to other unit types
+v5 release
