@@ -36,6 +36,7 @@ Version | Date | Notes
 0-0-7 | 25 08 2015 | Edited slots
 0-0-8 | 11 11 2015 | tweaks, v3
 0-0-9 | 20 11 2015 | corrected taskPatrol locality, v4
+0-1-0 | 05 04 2016 | 3DEN, fixes, v5
 
 02. COPYRIGHT STATEMENT
 =======================

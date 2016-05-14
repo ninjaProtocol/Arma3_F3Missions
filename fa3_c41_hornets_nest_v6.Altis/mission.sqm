@@ -91,7 +91,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="fa3_c41_hornets_nest_v6";
+		briefingName="fa3_c41_hornets_nest_v5";
 		overviewText="Mechanized CSAT platoon re-takes the FIA stronghold of Sofia";
 		resistanceWest=0;
 		resistanceEast=1;
