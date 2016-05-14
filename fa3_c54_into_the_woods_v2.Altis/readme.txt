@@ -29,8 +29,8 @@ Version | Date | Notes
 
 0-0-1 | 05-12-2015 | First release
 0-0-2 | 12-12-2015 | Minor Tweaks
-
-
+0-0-3 | 25-02-2016 | Eden update
+0-0-4 | 05-04-2016 | Removed MANPAD
 
 02. COPYRIGHT STATEMENT
 =======================
@@ -80,6 +80,8 @@ http://www.folkarps.com/forum/viewtopic.php?f=43&t=1382
 
 May require engineering team for recovery if things get confusing.
 
+Virtual units are broken at the moment (Eden issue) so slotting as Zeus won't work.
+
 
 
 08. CHANGE HISTORY
@@ -97,3 +99,15 @@ Adjusted ambush squad's position so they're less likely to be killed before thei
 Made MANPAD dude independent from group
 Adjusted position of Bravo 1 to avoid players getting stuck
 Tweaked briefing marker to make things clearer.
+
+0-0-3 | 25 02 2016
+Imported to new 3DEN editor (no SQM binarisation)
+Replaced camps with Eden compositions, added new camps
+Tweaked campfire behaviour
+Tweaked player and NPC positions
+Added decorative objects to INDFOR base.
+Reduced FIA MANPAD to 1 rocket
+Added param to toggle player NVGs (and add flashlights).
+
+0-0-4 | 05 04 2016
+Removed MANPAD.
