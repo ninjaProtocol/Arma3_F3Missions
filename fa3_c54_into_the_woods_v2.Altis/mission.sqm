@@ -114,7 +114,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="fa3_c54_into_the_woods_v6";
+		briefingName="fa3_c54_into_the_woods_v4";
 		overviewText="AAF infantry performs counter-insurgency and data recovery ops north of Firni";
 		resistanceWest=0;
 		startWeather=0.30000001;
