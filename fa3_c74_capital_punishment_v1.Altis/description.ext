@@ -278,6 +278,32 @@ class f_param_AISkill_INDP
 
 // ============================================================================================
 
+// SuicideKing - enable civilian populations in towns
+
+	class sk_param_enableCivilians
+	{
+		title = "Spawn Civilian Populations in Towns?";
+		values[] = {0,1,2};
+		texts[] = {"Disabled", "Pyrgos Only", "All Towns"};
+		default = 0;
+		code = "sk_var_popTowns = %1";
+	};
+
+// ============================================================================================
+
+// SuicideKing - disable AAF Plane CAS (Buzzard)
+
+	class sk_param_disablePlaneCAS
+	{
+		title = "Disable enemy A-143 Buzzard CAS";
+		values[] = {0,1};
+		texts[] = {"False", "True"};
+		default = 0;
+		code = "sk_var_noPlaneCAS = %1";
+	};
+
+// ============================================================================================
+
 // F3 - End of Params code blocks.
 // WARNING: DO NOT DELETE OR COMMENT OUT THIS CODE BLOCK
 

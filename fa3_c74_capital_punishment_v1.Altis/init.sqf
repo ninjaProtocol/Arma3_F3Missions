@@ -10,19 +10,20 @@ enableSaving [false, false];
 // F3 - Mute Orders and Reports
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-enableSentences false;
+//enableSentences false;
+player setSpeaker "NoVoice";
 
 // ====================================================================================
 
 // F3 - MapClick Teleport
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-// f_var_mapClickTeleport_Uses = 0;					// How often the teleport action can be used. 0 = infinite usage.
-// f_var_mapClickTeleport_TimeLimit = 0; 			// If higher than 0 the action will be removed after the given time.
-// f_var_mapClickTeleport_GroupTeleport = false; 	// False: everyone can teleport. True: Only group leaders can teleport and will move their entire group.
-// f_var_mapClickTeleport_Units = [];				// Restrict map click teleport to these units
-// f_var_mapClickTeleport_Height = 0;				// If > 0 map click teleport will act as a HALO drop and automatically assign parachutes to units
-// [] execVM "f\mapClickTeleport\f_mapClickTeleportAction.sqf";
+ f_var_mapClickTeleport_Uses = 1;					// How often the teleport action can be used. 0 = infinite usage.
+ f_var_mapClickTeleport_TimeLimit = 300; 			// If higher than 0 the action will be removed after the given time.
+ f_var_mapClickTeleport_GroupTeleport = true; 	// False: everyone can teleport. True: Only group leaders can teleport and will move their entire group.
+ f_var_mapClickTeleport_Units = ["UnitNATO_JSL_SL","UnitNATO_J1_FTL","UnitNATO_J2_FTL"];				// Restrict map click teleport to these units
+ f_var_mapClickTeleport_Height = 1000;				// If > 0 map click teleport will act as a HALO drop and automatically assign parachutes to units
+ [] execVM "f\mapClickTeleport\f_mapClickTeleportAction.sqf";
 
 // ====================================================================================
 
@@ -217,16 +218,17 @@ f_wound_extraFAK = 2;
 
 // ====================================================================================
 
-// Wolfenswan's populateTown script
-
-[chalkTown,200,5,10,5] execVM "ws_populateTownA3.sqf";
-[dorTown,200,5,10,5] execVM "ws_populateTownA3.sqf";
-[pyrgosTown,300,10,20,10] execVM "ws_populateTownA3.sqf";
-
-// ====================================================================================
-
 // Wolfenswan's createGarrison magic
 
 [] execVM "ws_garrisonControl.sqf";
 
 // ====================================================================================
+
+// SuicideKing's parameter checking script 
+
+[] execVM "sk_paramCheckScript.sqf";
+
+// ====================================================================================
+
+// global objective counters
+objectivesComplete = 0;

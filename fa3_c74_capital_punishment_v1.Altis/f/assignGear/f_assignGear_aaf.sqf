@@ -956,6 +956,17 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_smokegrenade, 25];
 		_unit addMagazineCargoGlobal [_smokegrenadegreen, 6];
 		_unit addItemCargoGlobal [_firstaid, 25];
+		
+		//Backpacks added by SuicideKing
+		switch (f_param_backpacks) do 
+		{
+			case 0: {_unit addBackpackCargoGlobal [_bagmedium,1]; };
+			
+			case 1: {_unit addBackpackCargoGlobal [_bagmedium,1];
+					 _unit addBackpackCargoGlobal [_bagsmall,13]; };
+			
+			case 2: {_unit addBackpackCargoGlobal [_bagmedium,14]; };
+		}
 };
 
 // CRATE: Large, ammo for 1 platoon

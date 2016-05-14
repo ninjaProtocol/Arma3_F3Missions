@@ -28,6 +28,8 @@ README CONTENTS
 Version | Date | Notes
 
 0-0-1 | 24-10-2015 | First release.
+0-0-2 | 17-04-2016 | Major revision
+0-0-3 | 28-04-2016 | Tweaks and fixes
 
 
 
@@ -99,3 +101,20 @@ Version | Date
 
 0-0-1 | 24-10-2015
 First public release.
+
+0-0-2 | 17-04-2016
+All missile specialists replaced with R(AT) for INDFOR
+Spawn point moved closer to border
+Added player reinforcements
+Added params for toggling civies and Buzzard CAS
+Win conditions reworked
+Added fortifications and defences in and around towns
+Removed INDFOR mortars, snipers
+Tweaked and added units, objects, markers
+Used "setSpeaker" to disable player voice/messages only.
+
+0-0-3 | 28-04-2016
+Fixed: Signs over fake minefields were oriented incorrectly
+Added: Juliet can now order a supply drop
+Tweaked: NATO briefing
+Added: Crates meant for Juliet now contain bagpacks as well. 

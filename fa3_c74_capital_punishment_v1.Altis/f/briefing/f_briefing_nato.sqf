@@ -15,6 +15,8 @@ Made with love for Folk ARPS by SuicideKing.
 <br/><br/>
 Thanks to cptnnick for helping me figure out caching and stuff, and thanks to Wolfenswan for his indispensible scripts.
 <br/><br/>
+Finally, thanks to a whole bunch of people in FA for providing invaluable feedback and suggestions to improve the mission (Netkev, Kasmeister, Audiox, darkChozo, fer, Spanks Masterson and Sparks, to name a few).
+<br/><br/>
 Made with F3 (http://www.ferstaberinde.com/f3/en/)
 "]];
 
@@ -30,6 +32,15 @@ CO, DC, Squad Leads, and A1, B1, C1 do NOT start mounted. They can go to their o
 If you're playing with motorized infantry, truck drivers and A2, B2, C2 will be pre-mounted in trucks. With mechanised infantry, crews will be mounted.
 <br/><br/>
 Attachments are mounted in their own Hunters, however you may choose to reassign them to a truck.
+<br/><br/>
+<font size='18'>REINFORCEMENTS</font>
+<br/>
+<marker name = 'mrkAirbase'>Juliet squad and TH1</marker> are reinforcement slots. TH1 is not required, as Juliet leaders have teleporting HALO option for 5 mins.
+<br/><br/>
+Inserting using TH1 can work two ways: either the helo drops them off via landing, or the troops take parachutes and paradrop from the helo, which can then provide CAS.
+<br/><br/>
+If the latter options is selected, then it is worth remembering that soldiers will have to give up their backpacks to take parachutes, so manage inventory accordingly. 
+If you do decide to choose this method, consider obtaining supplies from AAF military installations, or using the supply drop available to JSL.
 "]];
 
 // ====================================================================================
@@ -51,6 +62,8 @@ Each JTAC can access one of each asset.
 <br/><br/>
 <font size='18'>SPECIAL TASKS</font>
 <br/>
+The <marker name = 'mrkPyrgos_2'>cargo depot</marker> may contain supplies usable by reinforcements, so keep a look out.
+<br/><br/>
 Towns are populated. Mortars, rockets, and cannon fire are NOT ALLOWED on civillian buildings.
 "]];
 
@@ -61,7 +74,13 @@ Towns are populated. Mortars, rockets, and cannon fire are NOT ALLOWED on civill
 
 _mis = player createDiaryRecord ["diary", ["Mission","
 <br/>
-Your primary objective is to assault <marker name = 'mrkPyrgos'>Pyrgos</marker> and clear it of enemy forces.
+Your primary objective is to assault <marker name = 'mrkPyrgos'>Pyrgos</marker> and capture key areas. The areas are:
+<br/>
+1. <marker name = 'mrkPyrgos_3'>Administration buildings</marker>
+<br/>
+2. <marker name = 'mrkPyrgos_1'>Church</marker>
+<br/>
+3. <marker name = 'mrkPyrgos_2'>Military Cargo Depot</marker>
 <br/><br/>
 <marker name = 'mrkChal'>Chalkeia</marker> and <marker name = 'mrkDor'>Dorida</marker> are optional targets, but will prevent counter attacks.
 
@@ -87,7 +106,7 @@ Additionally, expect reinforcements from <marker name = 'mrkChal'>Chalkeia</mark
 <font size='18'>FRIENDLY FORCES</font>
 <br/>
 A combined platoon of tanks, AAA and motorized/mechanized infantry. NATO fortifications hold the front line
- and NATO territory.
+ and NATO territory. CTRG Paratroopers will reinforce our positions if the need arises.
 "]];
 
 // ====================================================================================
