@@ -278,6 +278,19 @@ class f_param_AISkill_INDP
 
 // ============================================================================================
 
+// SuicideKing - Select Mission Objective
+
+	class sk_param_selectObjective
+	{
+		title = "Select Objective";
+		values[] = {1,2};
+		texts[] = {"Hospital (Nearer)", "Castle (Further)"};
+		default = 1;
+		code = "sk_var_selectObjective = %1";
+	};
+
+// ============================================================================================
+
 // F3 - End of Params code blocks.
 // WARNING: DO NOT DELETE OR COMMENT OUT THIS CODE BLOCK
 

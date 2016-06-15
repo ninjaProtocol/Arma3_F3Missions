@@ -13,7 +13,9 @@ _cre = player createDiaryRecord ["diary", ["Credits","
 <br/>
 Made with love for Folk ARPS by SuicideKing.
 <br/><br/>
-Loosely based on the Urban Assault map in America's Army 2.
+Loosely based on the Urban Assault map in America's Army 2, mixed with the objective from Border Crossing.
+<br/><br/>
+Special thanks to Wolfenswan and Head for their useful scripts.
 <br/><br/>
 Made with F3 (http://www.ferstaberinde.com/f3/en/)
 "]];
@@ -24,8 +26,6 @@ Made with F3 (http://www.ferstaberinde.com/f3/en/)
 // The code below creates the administration sub-section of notes.
 
 _adm = player createDiaryRecord ["diary", ["Administration","
-<br/>
-- All team leaders (except attachment leaders) have one explosive charge.
 <br/>
 - Everyone has flashlights, no NVGs.
 <br/>
@@ -41,9 +41,16 @@ _exe = player createDiaryRecord ["diary", ["Execution","
 <br/>
 <font size='18'>SPECIAL TASKS</font>
 <br/><br/>
-To destroy the device, just place an explosive on it and blow it up - or use other means.
+To initiate data transfer, walk up to a device at the objective location and use the relevant action menu option.
 <br/><br/>
-Run to the exfil marker to trigger one of the endings. There's a roughly 100m radius around them.
+Transfer will take 5 MINUTES.
+<br/><br/>
+Once you begin data transfer, a laptop will be spawned from where you will be able to collect data. 
+You do not have to be near the laptop during the transfer. Pick up the data once it is done copying (there will be a hint).
+<br/><br/>
+Data carrier will be marked GLOBALLY on the map. Only the person carrying the data can trigger the ending condition.
+<br/><br/>
+Run to the exfil marker to trigger one of the endings. There's a roughly 50m radius around them.
 "]];
 
 // ====================================================================================
@@ -53,7 +60,7 @@ Run to the exfil marker to trigger one of the endings. There's a roughly 100m ra
 
 _mis = player createDiaryRecord ["diary", ["Mission","
 <br/>
-1) Destroy the devices at both <marker name = 'mrkEastObj'>East Objective</marker> and <marker name = 'mrkWestObj'>West Objective</marker> and <marker name ='mrkExfilOpfor'>exfil</marker>.
+1) Copy data from the devices at <marker name = 'mrkEastObj'>East Objective</marker> or <marker name = 'mrkWestObj'>West Objective</marker> and <marker name ='mrkExfilOpfor'>exfil</marker>.
 <br/><br/>
 ALTERNATIVELY
 <br/><br/>
@@ -69,7 +76,7 @@ Or both 1 and 2.
 
 _sit = player createDiaryRecord ["diary", ["Situation","
 <br/>
-AAF have two devices they've kept in Kavala. We don't know what they are, but we want to blow them up. Problem is, so does BLUFOR.
+AAF have a device they've kept in Kavala. We don't know what it is, so we want to hack into it. Problem is, so does BLUFOR.
 <br/><br/>
 <font size='18'>ENEMY FORCES</font>
 <br/>

@@ -28,6 +28,7 @@ README CONTENTS
 Version | Date | Notes
 
 0-0-1 | 17 01 2016 | First Release
+0-0-2 | 24 05 2016 | Objectives overhaul, v2
 
 
 
@@ -88,3 +89,8 @@ Version | Date
 
 0-0-1 | 17 01 2016
 First Release
+
+0-0-2 | 24 05 2016
+Completely changed the objectives, added associated scripts
+Adjusted exfil points
+Removed unneeded triggers

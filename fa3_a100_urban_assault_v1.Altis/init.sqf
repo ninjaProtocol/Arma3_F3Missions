@@ -217,6 +217,19 @@ f_wound_extraFAK = 2;
 
 // ====================================================================================
 
-//Globals
-westdunit = 0;
-eastdunit = 0;
+// Equipment modifiers
+
+// Head's script to disable UAV thermals:
+[] execVM "head_disableUAVthermals.sqf";
+
+// ====================================================================================
+
+// Objectives and win condition related
+
+// set objective according to param sk_param_selectObjective
+[] execVM "sk_selectObjectives.sqf";
+
+// start monitoring for win conditions
+[] execVM "sk_selectEndings.sqf";
+
+// ====================================================================================
