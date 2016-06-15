@@ -37,6 +37,7 @@ Version | Date | Notes
 0-0-8 | 11 11 2015 | tweaks, v3
 0-0-9 | 20 11 2015 | corrected taskPatrol locality, v4
 0-1-0 | 05 04 2016 | 3DEN, fixes, v5
+0-1-1 | 15 05 2016 | Tweaks and blanaces, v6
 
 02. COPYRIGHT STATEMENT
 =======================
@@ -158,3 +159,8 @@ Tweaks to some garrisons
 Tweaked positions of some units
 Changed all sharpshooters to other unit types
 v5 release
+
+0-1-1 | 15 05 2016
+Reduced number of AT RPG rounds with FIA (no more one hit KOs)
+Reduced number of FIA grenadiers
+v6 release
