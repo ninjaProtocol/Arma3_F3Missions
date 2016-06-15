@@ -278,6 +278,19 @@ class f_param_AISkill_INDP
 
 // ============================================================================================
 
+// SuicideKing - remove tanks
+
+	class sk_param_removeEnemyTanks
+	{
+		title = "Enable enemy tanks";
+		values[] = {0,1};
+		texts[] = {"Disabled", "Enabled"};
+		default = 0;
+		code = "sk_tanksEnabled = %1";
+	};
+
+// ============================================================================================
+
 // F3 - End of Params code blocks.
 // WARNING: DO NOT DELETE OR COMMENT OUT THIS CODE BLOCK
 

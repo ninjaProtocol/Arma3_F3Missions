@@ -216,6 +216,14 @@ f_wound_extraFAK = 2;
 [] execVM "f\medical\medical_init.sqf";
 
 // ====================================================================================
+
+//F3 - Premount component (only runs server side)
+if (isServer) then {
+[synchronizedObjects F3_preMount_NATO,["GrpNATO_ASL","GrpNATO_A1","GrpNATO_A2","GrpNATO_A3"],false,false] call f_fnc_mountGroups;
+[synchronizedObjects F3_preMount_NATO_1,["GrpNATO_BSL","GrpNATO_B1","GrpNATO_B2","GrpNATO_B3"],false,false] call f_fnc_mountGroups;
+[synchronizedObjects F3_preMount_NATO_2,["GrpNATO_CSL","GrpNATO_C1","GrpNATO_C2","GrpNATO_C3"],false,false] call f_fnc_mountGroups;
+};
+// ====================================================================================
 //Execute Wolfenswan's createGarrison stuff:
 [] execVM "ws_garrisonControl.sqf";
 
@@ -226,3 +234,13 @@ f_wound_extraFAK = 2;
 // ====================================================================================
 // Objective counters
 primaryObjectivesCompleted = 0;
+
+varTransmitter = nearestObject [getPos objTower, "Land_TTowerBig_2_F"];
+
+if (isServer) then {
+	if (sk_tanksEnabled == 0) then 
+	{
+		{deleteVehicle _x} forEach (crew tank1_aaf); deleteVehicle tank1_aaf;
+		{deleteVehicle _x} forEach (crew tank2_aaf); deleteVehicle tank2_aaf;
+	};
+};

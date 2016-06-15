@@ -30,7 +30,7 @@ Version | Date | Notes
 0-0-1 | 29-10-2015 | First public release
 0-0-2 | 04-11-2015 | Second public release
 0-0-3 | 18-11-2015 | tweaks for v2
-
+0-0-4 | 15-05-2016 | 3DEN, tweaks and fixes, v4 release
 
 02. COPYRIGHT STATEMENT
 =======================
@@ -107,3 +107,13 @@ put an isServer guard for all moveInCargo and ambient animation calls
 Moved all taskPatrol calls from waypoint OnAct fields to init fields with isServer checks. Was causing locallity issues. Thanks BIS.
 Only using SIT_LOW and STAND animations for decorative soldiers, because of server issues.
 Externally remains v2.
+
+0-0-4 | 15-05-2016
+Imported to Eden
+Added Juliet as reinforcements
+Removed HE rounds from Gorgon and AP rounds from Mora 
+Made some waypoints careless for the counterattacks
+Removed non-functioning radio message module
+Moved F3 premount component to init.sqf
+Bugfixes, tweaks.
+v4 release

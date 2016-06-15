@@ -33,6 +33,8 @@ CO, ENG do NOT start mounted, and can go to either CO Vic or their own <marker n
 <br/><br/>
 Mortar team doesn't start mounted, nor do they have a transport, so they'll have to hitch a ride if they need to be moved.
 <br/><br/>
+Juliet starts at the airfield and has HEMTTs available for transport.
+<br/><br/>
 <font size='18'>EXPLOSIVES</font>
 <br/>
 Engineers have explosives. If you haven't slotted them, take explosives from the <marker name = 'mrkSupply'>supply crates</marker> 
@@ -61,6 +63,8 @@ AH-9 CAS and (additional) Mortar support available to JTAC.
 <font size='18'>SPECIAL TASKS</font>
 <br/>
 <marker name = 'mrkPanagia'>Panagia</marker> is likely populated with civilians, no HE fire on buildings please.
+<br/><br/>
+Make sure to correctly identify the radio tower during the mission!
 "]];
 
 // ====================================================================================
@@ -97,7 +101,7 @@ Reinforcements may be sent from the north, mainly <marker name = 'mrkPyrgos'>Pyr
 <br/><br/>
 <font size='18'>FRIENDLY FORCES</font>
 <br/>
-Mechanised NATO Platoon. NATO forces hold the airfield and surrounding areas.
+Mechanised NATO Platoon. NATO forces hold the airfield and surrounding areas. Juliet is on standby to reinforce.
 "]];
 
 // ====================================================================================
