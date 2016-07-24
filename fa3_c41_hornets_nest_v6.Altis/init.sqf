@@ -219,3 +219,7 @@ f_wound_extraFAK = 2;
 
 // Wolfenswan's createGarrison function requires the next line.
 [] execVM "ws_garrisonControl.sqf";
+
+// ====================================================================================
+// Assign RPG-7 to all FIA AT
+[] execVM "sk_assignAT_fia.sqf";

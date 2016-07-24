@@ -38,6 +38,7 @@ Version | Date | Notes
 0-0-9 | 20 11 2015 | corrected taskPatrol locality, v4
 0-1-0 | 05 04 2016 | 3DEN, fixes, v5
 0-1-1 | 15 05 2016 | Tweaks and blanaces, v6
+0-1-2 | 24 07 2016 | RPG-7 for FIA, v7
 
 02. COPYRIGHT STATEMENT
 =======================
@@ -164,3 +165,7 @@ v5 release
 Reduced number of AT RPG rounds with FIA (no more one hit KOs)
 Reduced number of FIA grenadiers
 v6 release
+
+0-1-2 | 24 07 2016
+Replaced RPG32 with RPG7 for all FIA AT
+v7 release

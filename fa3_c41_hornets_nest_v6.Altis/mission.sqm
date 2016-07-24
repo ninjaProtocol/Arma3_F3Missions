@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=8;
+		nextID=10;
 	};
 	class Camera
 	{
@@ -29,31 +29,117 @@ class EditorData
 binarizationWanted=0;
 addons[]=
 {
-	"A3_Armor_F_Marid",
+	"A3_Ui_F",
+	"A3_Armor_F_Beta_APC_Wheeled_02",
 	"A3_Soft_F_MRAP_02",
 	"A3_Structures_F_Mil_Flags",
 	"A3_Structures_F_Mil_BagBunker",
 	"A3_Structures_F_Mil_BagFence",
 	"A3_Structures_F_Walls",
-	"A3_armor_f_beta_APC_Tracked_02",
+	"A3_Armor_F_Beta_APC_Tracked_02",
 	"A3_Data_F_Curator_Virtual",
-	"A3_Characters_F_OPFOR",
-	"a3_characters_f",
-	"A3_Characters_F_EPC",
+	"A3_Characters_F",
 	"A3_Modules_F_Curator_Curator",
-	"A3_Characters_F_INDEP",
-	"A3_Static_F_Gamma",
-	"a3_static_f",
-	"A3_Soft_F_MRAP_03",
-	"A3_Characters_F_Gamma",
-	"A3_Soft_F_Gamma_Offroad",
-	"a3_soft_f_offroad_01",
+	"A3_Static_F",
+	"A3_Soft_F_Beta_MRAP_03",
+	"A3_Soft_F_Offroad_01",
 	"A3_Modules_F_Sites",
 	"A3_Modules_F",
 	"A3_Modules_F_ObjectModifiers",
 	"A3_Modules_F_Curator_Misc",
 	"A3_Structures_F_Mil_Fortification",
 	"A3_Signs_F"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=12;
+		class Item0
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Armor_F_Beta";
+			name="Arma 3 Beta - Armored Land Vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item2
+		{
+			className="A3_Soft_F";
+			name="Arma 3 Alpha - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item3
+		{
+			className="A3_Structures_F_Mil";
+			name="Arma 3 - Military Buildings and Structures";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item4
+		{
+			className="A3_Structures_F";
+			name="Arma 3 - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item5
+		{
+			className="A3_Data_F_Curator";
+			name="Arma 3 Zeus Update - Main Configuration";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item6
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item7
+		{
+			className="A3_Modules_F_Curator";
+			name="Arma 3 Zeus Update - Scripted Modules";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item8
+		{
+			className="A3_Static_F";
+			name="Arma 3 Alpha - Turrets";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item9
+		{
+			className="A3_Soft_F_Beta";
+			name="Arma 3 Beta - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item10
+		{
+			className="A3_Modules_F";
+			name="Arma 3 Alpha - Scripted Modules";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item11
+		{
+			className="A3_Signs_F";
+			name="Arma 3 - Signs";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+	};
 };
 randomSeed=12552083;
 class ScenarioData
@@ -1772,7 +1858,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						init="if (isServer) then {" \n "this setAmmo [secondaryWeapon this, 0]; " \n "this addSecondaryWeaponItem ""RPG32_HE_F""; " \n "clearAllItemsFromBackpack this; " \n "this addItemToBackpack ""RPG32_HE_F"";" \n "}";
 					};
 					id=91;
 					type="B_G_Soldier_LAT_F";
@@ -1870,7 +1955,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						init="if (isServer) then {" \n "this setAmmo [secondaryWeapon this, 0]; " \n "this addSecondaryWeaponItem ""RPG32_HE_F""; " \n "clearAllItemsFromBackpack this; " \n "this addItemToBackpack ""RPG32_HE_F"";" \n "}";
 					};
 					id=97;
 					type="B_G_Soldier_LAT_F";
@@ -1988,7 +2072,6 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
-						init="if (isServer) then {" \n "this setAmmo [secondaryWeapon this, 0]; " \n "this addSecondaryWeaponItem ""RPG32_HE_F""; " \n "clearAllItemsFromBackpack this; " \n "this addItemToBackpack ""RPG32_HE_F"";" \n "}";
 					};
 					id=410;
 					type="B_G_Soldier_LAT_F";
@@ -2383,7 +2466,6 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
-						init="if (isServer) then {" \n "this setAmmo [secondaryWeapon this, 0]; " \n "this addSecondaryWeaponItem ""RPG32_HE_F""; " \n "clearAllItemsFromBackpack this; " \n "this addItemToBackpack ""RPG32_HE_F"";" \n "this addItemToBackpack ""RPG32_F"";" \n "}";
 					};
 					id=123;
 					type="B_G_Soldier_LAT_F";
@@ -2559,7 +2641,6 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
-						init="if (isServer) then {" \n "this setAmmo [secondaryWeapon this, 0]; " \n "this addSecondaryWeaponItem ""RPG32_HE_F""; " \n "clearAllItemsFromBackpack this; " \n "this addItemToBackpack ""RPG32_HE_F"";" \n "}";
 					};
 					id=144;
 					type="B_G_Soldier_LAT_F";
@@ -2683,7 +2764,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						init="if (isServer) then {" \n "clearAllItemsFromBackpack this; " \n "this addItemToBackpack ""RPG32_HE_F"";" \n "}";
 					};
 					id=150;
 					type="B_G_Soldier_LAT_F";
@@ -2879,7 +2959,6 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
-						init="if (isServer) then {" \n "this setAmmo [secondaryWeapon this, 0]; " \n "this addSecondaryWeaponItem ""RPG32_HE_F""; " \n "clearAllItemsFromBackpack this; " \n "this addItemToBackpack ""RPG32_HE_F"";" \n "}";
 					};
 					id=411;
 					type="B_G_Soldier_LAT_F";
@@ -3198,7 +3277,7 @@ class Mission
 					showWP="NEVER";
 					id=182;
 					type="Move";
-					atlOffset=0.37306976;
+					atlOffset=0.69240189;
 				};
 			};
 			class Attributes
@@ -3279,7 +3358,6 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
-						init="if (isServer) then {" \n "this setAmmo [secondaryWeapon this, 0]; " \n "this addSecondaryWeaponItem ""RPG32_HE_F""; " \n "clearAllItemsFromBackpack this; " \n "this addItemToBackpack ""RPG32_F"";" \n "}";
 					};
 					id=188;
 					type="B_G_Soldier_LAT_F";
@@ -3297,7 +3375,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						init="if (isServer) then {" \n "this setAmmo [secondaryWeapon this, 0]; " \n "this addSecondaryWeaponItem ""RPG32_HE_F""; " \n "clearAllItemsFromBackpack this; " \n "this addItemToBackpack ""RPG32_F"";" \n "}";
 					};
 					id=189;
 					type="B_G_Soldier_LAT_F";
@@ -3651,7 +3728,6 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
-						init="if (isServer) then {" \n "this setAmmo [secondaryWeapon this, 0]; " \n "this addSecondaryWeaponItem ""RPG32_HE_F""; " \n "clearAllItemsFromBackpack this; " \n "this addItemToBackpack ""RPG32_HE_F"";" \n "}";
 					};
 					id=415;
 					type="B_G_Soldier_LAT_F";
@@ -4668,7 +4744,6 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
-						init="if (isServer) then {" \n "this setAmmo [secondaryWeapon this, 0]; " \n "this addSecondaryWeaponItem ""RPG32_HE_F""; " \n "clearAllItemsFromBackpack this; " \n "this addItemToBackpack ""RPG32_HE_F"";" \n "}";
 					};
 					id=242;
 					type="B_G_Soldier_LAT_F";
@@ -4686,7 +4761,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						init="if (isServer) then {" \n "this setAmmo [secondaryWeapon this, 0]; " \n "this addSecondaryWeaponItem ""RPG32_HE_F""; " \n "clearAllItemsFromBackpack this; " \n "this addItemToBackpack ""RPG32_HE_F"";" \n "}";
 					};
 					id=243;
 					type="B_G_Soldier_LAT_F";
@@ -4704,7 +4778,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						init="if (isServer) then {" \n "this setAmmo [secondaryWeapon this, 0]; " \n "this addSecondaryWeaponItem ""RPG32_HE_F""; " \n "clearAllItemsFromBackpack this; " \n "this addItemToBackpack ""RPG32_F"";" \n "}";
 					};
 					id=244;
 					type="B_G_Soldier_LAT_F";
@@ -4755,7 +4828,6 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
-						init="if (isServer) then {" \n "this setAmmo [secondaryWeapon this, 0]; " \n "this addSecondaryWeaponItem ""RPG32_HE_F""; " \n "clearAllItemsFromBackpack this; " \n "this addItemToBackpack ""RPG32_F"";" \n "}";
 					};
 					id=247;
 					type="B_G_Soldier_LAT_F";
@@ -4774,7 +4846,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						init="if (isServer) then {" \n "this setAmmo [secondaryWeapon this, 0]; " \n "this addSecondaryWeaponItem ""RPG32_HE_F""; " \n "clearAllItemsFromBackpack this; " \n "this addItemToBackpack ""RPG32_HE_F"";" \n "}";
 					};
 					id=248;
 					type="B_G_Soldier_LAT_F";
@@ -4792,7 +4863,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						init="if (isServer) then {" \n "this setAmmo [secondaryWeapon this, 0]; " \n "this addSecondaryWeaponItem ""RPG32_HE_F""; " \n "clearAllItemsFromBackpack this; " \n "this addItemToBackpack ""RPG32_HE_F"";" \n "}";
 					};
 					id=249;
 					type="B_G_Soldier_LAT_F";
@@ -4859,7 +4929,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						init="if (isServer) then {" \n "clearAllItemsFromBackpack this; " \n "this addItemToBackpack ""RPG32_HE_F"";" \n "}";
 					};
 					id=253;
 					type="B_G_Soldier_LAT_F";
@@ -4878,7 +4947,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						init="if (isServer) then {" \n "this setAmmo [secondaryWeapon this, 0]; " \n "this addSecondaryWeaponItem ""RPG32_HE_F""; " \n "clearAllItemsFromBackpack this; " \n "this addItemToBackpack ""RPG32_HE_F"";" \n "}";
 					};
 					id=254;
 					type="B_G_Soldier_LAT_F";
@@ -5061,7 +5129,6 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
-						init="if (isServer) then {" \n "this setAmmo [secondaryWeapon this, 0]; " \n "this addSecondaryWeaponItem ""RPG32_HE_F""; " \n "clearAllItemsFromBackpack this; " \n "this addItemToBackpack ""RPG32_HE_F"";" \n "}";
 					};
 					id=268;
 					type="B_G_Soldier_LAT_F";
@@ -5080,7 +5147,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						init="if (isServer) then {" \n "this setAmmo [secondaryWeapon this, 0]; " \n "this addSecondaryWeaponItem ""RPG32_HE_F""; " \n "}";
 					};
 					id=269;
 					type="B_G_Soldier_LAT_F";
@@ -5151,6 +5217,7 @@ class Mission
 				position[]={24898.41,28.04373,21163.527};
 			};
 			description="highlights area of operation";
+			flags=1;
 			id=272;
 			type="ModuleCoverMap_F";
 		};
@@ -5649,7 +5716,6 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
-						init="if (isServer) then {" \n "this setAmmo [secondaryWeapon this, 0]; " \n "this addSecondaryWeaponItem ""RPG32_HE_F""; " \n "clearAllItemsFromBackpack this; " \n "this addItemToBackpack ""RPG32_HE_F"";" \n "this addItemToBackpack ""RPG32_HE_F"";" \n "}";
 					};
 					id=300;
 					type="B_G_Soldier_LAT_F";
@@ -5667,7 +5733,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
-						init="if (isServer) then {" \n "this setAmmo [secondaryWeapon this, 0]; " \n "this addSecondaryWeaponItem ""RPG32_HE_F""; " \n "clearAllItemsFromBackpack this; " \n "this addItemToBackpack ""RPG32_HE_F"";" \n "this addItemToBackpack ""RPG32_HE_F"";" \n "}";
 					};
 					id=301;
 					type="B_G_Soldier_LAT_F";
@@ -6456,7 +6521,6 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
-						init="if (isServer) then {" \n "this setAmmo [secondaryWeapon this, 0]; " \n "this addSecondaryWeaponItem ""RPG32_HE_F""; " \n "clearAllItemsFromBackpack this; " \n "this addItemToBackpack ""RPG32_HE_F"";" \n "}";
 					};
 					id=135;
 					type="B_G_Soldier_LAT_F";
@@ -6702,7 +6766,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={23940.061,18.482412,20209.277};
+				position[]={23940.061,18.482414,20209.277};
 				angles[]={0,0.77949589,0};
 			};
 			side="Empty";
@@ -6712,6 +6776,7 @@ class Mission
 			};
 			id=370;
 			type="Land_Mil_WiredFence_Gate_F";
+			atlOffset=0.00078201294;
 		};
 		class Item126
 		{
