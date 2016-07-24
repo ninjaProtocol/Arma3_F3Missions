@@ -2,7 +2,7 @@ MISSION README
 ==============
 
 Mission: Feint! Parry! Riposte!
-Version: 0-0-1
+Version: 0-0-3
 Developer(s): Ojas Sarup (SuicideKing)
 Description: NATO JTF assaults Altis Internation Airport
 
@@ -29,6 +29,8 @@ Version | Date | Notes
 
 0-0-1 | 01 01 2016 | Holiday special. First release.
 0-0-2 | 04 06 2016 | Tweaks and Fixes, V2
+0-0-3 | 26 06 2016 | Tweaks, v3
+0-0-4 | 06 07 2016 | Tweaks, v4
 
 
 
@@ -101,3 +103,17 @@ Added cover map module
 Tweaked/removed some markers
 Fixed locality issue caused by incorrect implementation of createGarrison
 Updated readme
+
+0-0-3 | 26 06 2016
+v3
+Edited breifing
+Cleaned up markers
+Tweaked enemy vehicles
+Added some props
+
+0-0-4 | 06 07 2016
+v4
+Added a notification for the shipyard
+Slowed QRF slightly
+Made objective trigger areas smaller
+Some tweaks to markers

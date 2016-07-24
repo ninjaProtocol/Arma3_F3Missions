@@ -77,6 +77,30 @@ _mis = player createDiaryRecord ["diary", ["Mission","
 
 _sit = player createDiaryRecord ["diary", ["Situation","
 <br/>
+At 0745 hrs Broadway gave the go ahead for 2nd Battalion's assault on Altis International Airport, currently garrisoned by AAF and CSAT forces.
+<br/><br/>
+1st Platoon will attempt to take the airport with the help of the CTRG Z Squadron and CAS support provided by the 501st Aviation Regiment.
+<br/><br/>
+<font size='18'>ENEMY FORCES</font>
+<br/>
+Approximately 3 platoons worth of infantry, garrisoned in buildings and patroling the airport. Recon indicates multiple IFVs on patrol and tanks. 
+Additionally, a CSAT QRF situated in the SW part of the airbase. All markers represent last known enemy positions. The shipping yard appears to be 
+guarded by infantry only, as far as we can tell.
+<br/><br/>
+One static Tigris AAA gun emplacement has been spotted, with an effective range of 1000m. MANPADs may be present too, with an engagement radius of 2000m.
+<br/><br/>
+<font size='18'>FRIENDLY FORCES</font>
+<br/>
+Fox Company holds Telos, Anthrakia and the nearby military installation.
+"]];
+
+// ====================================================================================
+
+// NOTES: SITUATION - EXTENDED
+// The code below creates the situation sub-section of notes.
+
+_sitExt = player createDiaryRecord ["diary", ["Backstory","
+<br/>
 FROM: Major Aziz, Fox Company
 <br/>
 TO: Commanding Officer, 1st Platoon
@@ -90,16 +114,7 @@ With Dog Company covering our northern flank, we should be able to focus on the 
 of keeping the military installation under lockdown; 4th's holding Anthrakia 
 to the south of our position, while the 5th has established a garrison in a building complex near that town. HQ's holding Telos. 
 <br/><br/>
-1st Platoon will attempt to take the airport with the help of a squad from the 11th CTRG Marines and CAS support provided by the 501st Aviation Regiment.
-<br/><br/>
-<font size='18'>ENEMY FORCES</font>
-<br/><br/>
-Approximately 3 platoons worth of infantry, garrisoned in buildings and patroling the airport. Recon indicates multiple IFVs and tanks. CSAT QRF situated in 
-the SW part of the airbase. One FV-720 Mora has been spotted, and MANPADs may be present too. The shipping yard appears to be guarded by infantry only, as far as we can tell.
-<br/><br/>
-<font size='18'>FRIENDLY FORCES</font>
-<br/>
-Fox Company holds Telos, Anthrakia and the nearby military installation. Other friendly platoons are operating in the area, but will not advance west of the installation.
+1st Platoon will attempt to take the airport with the help of the CTRG Z Squadron and CAS support provided by the 501st Aviation Regiment.
 "]];
 
 // ====================================================================================

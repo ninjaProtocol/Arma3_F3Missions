@@ -53,11 +53,11 @@ while {!isNull player} do {
 
 	setViewDistance _vd;
 
-		// DEBUG
+		/* DEBUG
 		if (f_var_debugMode == 1) then
 		{
 			player sideChat format ["DEBUG (f\setViewDistance\f_addSetViewDistanceEHs.sqf): Viewdistance set to: = %1",_vd];
-		};
+		};*/
 
 	// Wait until player changes the vehicle or changes seats. Sleep 1s between every check.
 	while {_veh == vehicle player} do {

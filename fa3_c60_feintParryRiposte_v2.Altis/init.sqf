@@ -10,7 +10,7 @@ enableSaving [false, false];
 // F3 - Mute Orders and Reports
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-enableSentences false;
+{_x setSpeaker "NoVoice"} forEach playableUnits;
 
 // ====================================================================================
 
@@ -83,11 +83,11 @@ f_var_doNotRemoveBodies = [];
 // F3 - Dynamic View Distance
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-f_var_viewDistance_default = 1600;
-f_var_viewDistance_tank = 2000;
-f_var_viewDistance_car = 2000;
-f_var_viewDistance_rotaryWing = 2500;
-f_var_viewDistance_fixedWing = 5000;
+f_var_viewDistance_default = 2000;
+f_var_viewDistance_tank = 2500;
+f_var_viewDistance_car = 2500;
+f_var_viewDistance_rotaryWing = 5000;
+f_var_viewDistance_fixedWing = 8000;
 f_var_viewDistance_crewOnly = true;
 [] execVM "f\dynamicViewDistance\f_setViewDistanceLoop.sqf";
 
